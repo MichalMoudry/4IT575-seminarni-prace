@@ -6,7 +6,7 @@
 19.11.2021
 
 ## Status
-Accepted
+Schválené
 
 ## Context
 Existuje požadavek na sbírání geolokačních dat z klientských zařízení.
