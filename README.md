@@ -23,3 +23,11 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 - Důležitá je doba dodání systému
 - Je důležité vybudovat řešení, které nebude třeba za 3 roky vyměnit
 - Žádná vážná rozpočtová omezení
+
+### Aplikace v systému
+- Klientská aplikace pro prodejce párků v rohlíku
+- Backend pro obsluhu klientských aplikací
+
+## Zvolené architektury
+- SOA
+- Event driven architecture
