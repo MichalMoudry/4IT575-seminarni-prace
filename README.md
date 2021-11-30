@@ -3,8 +3,8 @@ Repositář s dokumenty, které se týkají seminární práce v rámci předmě
 
 ## Obsah repositáře
 - [Popis aplikace](https://github.com/MichalMoudry/4IT575-seminarni-prace#popis-aplikace "Popis aplikace")
-- [Dokumentace architektury č. 1](https// "Dokumentace architektury č. 1")
-- [Dokumentace architektury č. 2](https// "Dokumentace architektury č. 2")
+- [Dokumentace architektury č. 1](https://github.com/MichalMoudry/4IT575-seminarni-prace/tree/main/dokumentace%20architektury/architektura%201 "Dokumentace architektury č. 1")
+- [Dokumentace architektury č. 2](https://github.com/MichalMoudry/4IT575-seminarni-prace/tree/main/dokumentace%20architektury/architektura%202 "Dokumentace architektury č. 2")
 
 ## Popis aplikace
 Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele stánků s párky v rohlíku prodejní systém.
