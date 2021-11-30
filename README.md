@@ -2,8 +2,9 @@
 Repositář s dokumenty, které se týkají seminární práce v rámci předmětu 4IT575 - Softwarové architektury.
 
 ## Obsah repositáře
-- [Rozhodnutí o architektuře](https://github.com/MichalMoudry/4IT575-seminarni-prace/tree/main/rozhodnut%C3%AD "Rozhodnutí o architektuře")
 - [Popis aplikace](https://github.com/MichalMoudry/4IT575-seminarni-prace#popis-aplikace "Popis aplikace")
+- [Dokumentace architektury č. 1](https// "Dokumentace architektury č. 1")
+- [Dokumentace architektury č. 2](https// "Dokumentace architektury č. 2")
 
 ## Popis aplikace
 Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele stánků s párky v rohlíku prodejní systém.

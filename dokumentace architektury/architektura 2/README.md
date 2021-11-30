@@ -1,0 +1,1 @@
+# Dokumentace architektury č. 2
