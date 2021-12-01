@@ -68,7 +68,7 @@ Kód diagramu je pro tvorbu diagramů přes PlantUML.
 >
 > SocialMediaService -right-> ExternalSocialMediaAPI
 >
-> SalesService -left-> WarehouseMgmtSystemAPI
+> StocksService -left-> WarehouseMgmtSystemAPI
 >
 > client -up-> ESBAPI
 >
