@@ -26,7 +26,7 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 - Žádná vážná rozpočtová omezení
 
 ### Aplikace v systému
-- Klientská aplikace pro prodejce párků v rohlíku
+- Klientská aplikace pro prodejní systém
 - Backend pro obsluhu klientských aplikací
 
 ## Zvolené architektury

@@ -6,7 +6,7 @@
 19.11.2021
 
 ## Status
-Návrh
+Schválené
 
 ## Context
 Existuje požadavek na jednoduchou a lightweight aplikaci pro zařízení využívané prodejci ve stáncích s hot dogy. Stejné požadavky lze přenést na aplikaci určenou pro zákazníky těchto stánků.
