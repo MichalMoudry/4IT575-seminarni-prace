@@ -102,7 +102,9 @@ Kód diagramu je pro tvorbu diagramů přes PlantUML.
 - **Služba pro integraci se sociálními sítěmi**
     - Jedná se o službu pro integraci s používanými sociálními sítěmi, tedy klientské aplikace nemusí využívat SDK daných sítí, ale stačí, aby využívali tuto službu. Ve výsledku se tedy jedná o abstrakci konkrétních API sociálních sítí, což třeba lze využít v případě, že jedna informace (= post na sociální síti) lze upravit do formátu pro více než jednu sociální síť (= informace o polozce stánku s hotdogy bude nahrána např. na instagram a twitter zároveň).
     - SocialMediaAPI:
+        - Jde o rozhraní této služby, které je využíváno ESB, resp. klientskou aplikací skrze ESB pro komunkaci s exportovací službou.
     - ExternalSocialMediaAPI:
+        - Jde o různé externí API sociálních sítí, které jsou využívané touto službou, tak aby klientská aplikace nemusela přímo pracovat s danými API.
 - **Databázový systém**
     - Jedná se o databázový systém, který tedy obsahuje databáze prodejního systémů a systém řízení báze dat (SŘBD).
     - ODBC:
