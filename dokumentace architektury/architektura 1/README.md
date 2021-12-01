@@ -24,7 +24,7 @@ Kód diagramu je pro tvorbu diagramů přes PlantUML.
 >
 > actor "Obchodník se stánky" as obchodnik
 >
-> rectangle ProdejniSystem {
+> rectangle "Prodejní systém" {
 >
 >    usecase "UC1: Sledování tržeb" as UC1
 >
