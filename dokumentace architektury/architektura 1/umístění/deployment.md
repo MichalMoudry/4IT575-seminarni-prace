@@ -1,7 +1,8 @@
 # Deployment view
-## Primární prezentace
+## Primary presentation
+### UML
 
-## Katalog elementů
+## Element catalog
 
 ## Context diagram
 
