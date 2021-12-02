@@ -1,10 +1,10 @@
 # Component view
 ## Primary presentation
 ### UML
-![Component diagram](../assets/prodejni_system_component_diagram.png "Component diagram")
+![Component diagram](../assets/prodejni_system_component_diagram.png "Diagram komponent prodejního systému")
 
-### Kód diagramu
-Kód diagramu je pro tvorbu diagramů přes PlantUML.
+#### **Kód diagramu**
+Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
 > @startuml
 >
