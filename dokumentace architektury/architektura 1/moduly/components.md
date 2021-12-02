@@ -90,7 +90,7 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
     - SalesAPI:
         - Jde o rozhraní této služby, které je využíváno ESB, resp. klientskou aplikací skrze ESB pro komunkaci se slevovou službou.
 - **Služba pro zásoby**
-    - Jde o službu, která realizuje funkcionalitu pro posílání aktualizací zásob mobilním pracovníkům pro správu zásob.
+    - Jde o službu, která realizuje funkcionalitu pro posílání aktualizací zásob mobilním pracovníkům pro správu zásob. Důvodem existence této služby, je skutečnost, že tato služba může mít "real-time" spojení (např. skrze SignalR) s Warehouse Management systémem, a tedy je schopno poskytovat klientské aplikaci aktuální data na požádání (= klientská aplikace tedy nemusí dané real-time spojení realizovat => úspora výpočteních prostředků klientského zařízení). Samozřejmě tato služba také může využívat databázi pro ukládání stavu zásob, pokud není vyloženě potřeba, aby konkrétní uživatel věděl měl přehled o aktuálním stavu zásob.
     - StocksAPI:
         - Jde o rozhraní této služby, které je využíváno ESB, resp. klientskou aplikací skrze ESB pro komunkaci se službou pro zásoby.
     - WarehouseMgmtSystemAPI:
