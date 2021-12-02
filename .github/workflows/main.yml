@@ -24,13 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - name: Convert Markdown to HTML
+        uses: natescherer/markdown-to-html-with-github-style-action@v1
         with:
-          input_dir: /
-          output_dir: pdfs
-          # Default is true, can set to false to only get PDF files
-          build_html: false
-      - uses: actions/upload-artifact@v1
-        with:
-          name: docs
-          path: pdfs
+          path: README.md
+          outputpath: docs
