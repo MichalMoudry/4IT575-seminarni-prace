@@ -108,6 +108,7 @@ Klientská aplikace prodejního systému by měla být multiplatformní, aby už
 Pro běh aplikace pro webové API je použit Kestrel, tedy aplikace nemusí běžet jen na Windows serveru (IIS), ale je podporovanán i Linux (nginx, Apache).
 
 ## Rationale
+Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci ESB a HTTP protokolu. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
 
 ## Related Views
 - [Diagram komponent](../moduly/components.md "Diagram komponent")
