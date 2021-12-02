@@ -28,4 +28,4 @@ jobs:
         uses: ldeluigi/markdown-docs@latest
         with:
           src: .
-          dst: docs
+          dst: ./docs
