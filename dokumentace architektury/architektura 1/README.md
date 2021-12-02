@@ -13,8 +13,8 @@ Funkcionalita prodejního systému je popsána níže pomocí případů níže:
 
 ![UseCase diagram](./assets/prodejni_system_usecase_diagram.png "Use Case diagram prodejního systému")
 
-#### Kód diagramu
-Kód diagramu je pro tvorbu diagramů přes PlantUML.
+#### **Kód diagramu**
+Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
 > @startuml
 > 
