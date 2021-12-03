@@ -6,25 +6,17 @@
 #### **Kód diagramu**
 > @startuml
 >
-> node "Klientské zařízení" as clientDevice `<<device>>` {
+> node "Klientské zařízení" as client `<<device>>` {
 >
-> artifact "Klientská aplikace prodejního systému" `<<application>>`
->
-> }
->
-> node "Reverse proxy" as reverseProxy `<<device>>`
->
-> node "Aplikační server" as appServer `<<device>>` {
->
-> artifact "ESB" `<<application>>`
+>   artifact "Klientská aplikace prodejního systému" `<<application>>`
 >
 > }
 >
-> node "Web server" as webServer `<<device>>` {
+> node "Webový server" as webServer `<<device>>` {
 >
 > node Kestrel `<<execution environment>>` {
 >
-> artifact "API aplikace" `<<application>>`
+>   artifact "Aplikace webové API" `<<application>>`
 >
 > }
 >
@@ -32,7 +24,7 @@
 >
 > node "Databázový server" as dbServer `<<device>>` {
 >
-> node "MS SQL Server" `<<DBMS>>`
+>   node "MS SQL Server" `<<DBMS>>`
 >
 > }
 >
@@ -40,11 +32,7 @@
 >
 > node "Social media server" as socialMediaServer `<<device>>`
 >
-> clientDevice -- reverseProxy : "HTTP"
->
-> reverseProxy -- appServer : "HTTP"
->
-> appServer -- webServer : "HTTP"
+> client -- webServer : "HTTP"
 >
 > webServer -- dbServer : "ODBC"
 >
@@ -59,17 +47,11 @@
     - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít libovolný operační systém.
 - **Klientská aplikace prodejního systému**
     - Jde o klientskou aplikaci našeho prodejního systému, přičemž tato aplikace běží na tenkém klientovi.
-- **Reverse proxy**
-    - Jde o fyzický server, který stojí mezi klientským zařízením a ESB. Tento server realizuje funkci reverse proxy.
-- **Aplikační server**
-    - Jde o aplikační server, na kterém běží aplikace ESB.
-- **ESB**
-    - Aplikace realizující funkcionalitu Enterprise Service Bus.
 - **Web server**
-    - Fyzický server, na kterém běží Kestrel a .NET aplikaci pro webové API.
+    - Fyzický server, na kterém běží Kestrel a .NET aplikaci pro webové API. Samozřejmě zde neuvažujeme load balancing, tedy v realitě může existovat několik síťových prvků (reverse proxy, load balancer) před webovým servrem, a také může existovat více fyzických webových serverů.
 - **Kestrel**
     - Multiplatformní webový server pro .NET aplikace.
-- **API aplikace**
+- **Aplikace webové API**
     - Jde o `ASP.NET Core` API aplikaci, která poskytuje endpointy a operace (aplikační model se konkrétně jmenuje `ASP.NET Core Web API`) pro požadované služby (ty jsou stanovené v diagramu komponent).
 - **Databázový server**
     - Jedná se o fyzický server, na kterém běží databáze a MS SQL Server, přičemž jako komunikační protokol je využíván ODBC.
@@ -99,7 +81,7 @@
 > @enduml
 
 ## Variability guide
-**Vysoké množství podporoavných klientských zařízení**
+**Vysoké množství podporovaných klientských zařízení**
 
 Klientská aplikace prodejního systému by měla být multiplatformní, aby uživatelé nemuseli vlastnit specifické zařízení pro užívání prodejního systému.
 
