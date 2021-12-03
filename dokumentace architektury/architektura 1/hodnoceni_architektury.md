@@ -15,12 +15,32 @@ Pro hodnocení architektury bude využita ordinální stupnice ([zobrazená ní�
 </div>
 
 ## Hodnocení
-| Charakteristika | Splňuje | Váha | Výsledek |
-|-----------------|---------|------|----------|
-| Dostupnost      |         |      |          |
-| Kontinuita      |         |      |          |
-| Výkonnost       |         |      |          |
-| ...             |         |      |          |
-| Souhrn          |         |      |          |
+| Charakteristika    | Splňuje | Váha | Výsledek |
+|--------------------|---------|------|----------|
+| Dostupnost         |         |      |          |
+| Kontinuita         |         |      |          |
+| Výkonnost          |         |      |          |
+| Recoverability     |         |      |          |
+| Reliability        |         |      |          |
+| Robustnost         |         |      |          |
+| Škálovatelnost     |         |      |          |
+| Konfigurovatelnost |         |      |          |
+| Rozšiřitelnost     |         |      |          |
+| Instalovatelnost   |         |      |          |
+| Znovupoužitelnost  |         |      |          |
+| Lokalizace         |         |      |          |
+| Udržovatelnost     |         |      |          |
+| Přenositelnost     |         |      |          |
+| Aktualizovatelnost |         |      |          |
+| Podpora            |         |      |          |
+| Zpřístupnění       |         |      |          |
+| Archivovatelnost   |         |      |          |
+| Autentizace        |         |      |          |
+| Autorizace         |         |      |          |
+| Právní             |         |      |          |
+| Soukromí           |         |      |          |
+| Zabezpečení        |         |      |          |
+| Použitelnost       |         |      |          |
+| Souhrn             |         |      |          |
 
 ## Souhrn

@@ -93,4 +93,4 @@ Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozh
 
 ## Related Views
 - [Deployment view](../umístění/deployment.md "Deployment view")
-- [High Level Module View](../komponenty%20a%20konektory/module_view.md "High Level Module View")
+- [High Level Module View](../moduly/module_view.md "High Level Module View")
