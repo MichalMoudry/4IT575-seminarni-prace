@@ -2,6 +2,8 @@
 ## System overview
 Popisovaná architektura se vztahuje na aplikaci pro místní obchodníky se stánky pro prodej párků v rohlíku, tedy se jedná o prodejní systém pro takové uživatele.
 
+Zvolená architektura č. 1 je SOA.
+
 ### Functionality
 Funkcionalita prodejního systému je popsána níže pomocí případů níže:
 
