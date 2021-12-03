@@ -15,4 +15,4 @@ Existuje požadavek na jednoduchou a lightweight aplikaci pro zařízení využ�
 Budeme využívat vrstvenou monolitickou architekturu pro naše klientské aplikace.
 
 ## Consequences
-Struktura našich klientských aplikací bude rozdělena do vrstev v rámci monolitu (např. dle vzoru MVVM). Výhodou je malá velikost a jednoduchost aplikací.
+Struktura našich klientských aplikací bude rozdělena do vrstev v rámci monolitu (např. dle vzoru MVVM). Výhodou je malá velikost, jednoduchost a testovatelnost aplikací.
