@@ -2,6 +2,8 @@
 ## System overview
 Popisovaná architektura se vztahuje na aplikaci pro místní obchodníky se stánky pro prodej párků v rohlíku, tedy se jedná o prodejní systém pro takové uživatele.
 
+Zvolená architektura č. 1 je SOA.
+
 ### Functionality
 Funkcionalita prodejního systému je popsána níže pomocí případů níže:
 
@@ -23,6 +25,12 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 > actor "Provozovatel stánků" as provozovatel
 >
 > actor "Obchodník se stánky" as obchodnik
+>
+> actor "Pracovník pro správu zásob" as zasobnik
+>
+> actor WMS `<<system>>`
+>
+> actor "Sociální sítě" as socialniSite `<<system>>`
 >
 > rectangle "Prodejní systém" {
 >
@@ -53,6 +61,12 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 > obchodnik -up-> UC2
 >
 > obchodnik -up-> UC4
+>
+> UC3 <-- WMS
+>
+> zasobnik <-- UC3
+>
+> UC4 --> socialniSite
 >
 > @enduml
 

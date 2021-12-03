@@ -1,0 +1,1 @@
+# Hodnocení architektury č. 1
