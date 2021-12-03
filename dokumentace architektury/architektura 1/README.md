@@ -24,6 +24,12 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 >
 > actor "Obchodník se stánky" as obchodnik
 >
+> actor "Pracovník pro správu zásob" as zasobnik
+>
+> actor WMS `<<system>>`
+>
+> actor "Sociální sítě" as socialniSite `<<system>>`
+>
 > rectangle "Prodejní systém" {
 >
 >    usecase "UC1: Sledování tržeb" as UC1
@@ -53,6 +59,12 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 > obchodnik -up-> UC2
 >
 > obchodnik -up-> UC4
+>
+> UC3 <-- WMS
+>
+> zasobnik <-- UC3
+>
+> UC4 --> socialniSite
 >
 > @enduml
 
