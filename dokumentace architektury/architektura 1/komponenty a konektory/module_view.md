@@ -31,9 +31,11 @@
 >
 > }
 >
-> webApp ..> sharedLibrary : `"<<use>>"`
+> webApp .up.> sharedLibrary : `"<<use>>"`
 >
-> clientApp .up.> sharedLibrary : `"<<use>>"`
+> clientApp ..> sharedLibrary : `"<<use>>"`
+ >
+> clientApp ..> webApp
 >
 > @enduml
 
