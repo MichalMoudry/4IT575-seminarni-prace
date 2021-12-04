@@ -1,0 +1,1 @@
+# Rozhodnutí o robustnosti klientské aplikace
