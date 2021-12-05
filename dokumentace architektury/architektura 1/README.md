@@ -33,7 +33,7 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 >
 > actor "Obchodník se stánky" as obchodnik
 >
-> actor "Pracovník pro správu zásob" as zasobnik
+> actor "Pracovník správy zásob" as zasobnik
 >
 > actor WMS `<<system>>`
 >
@@ -53,21 +53,21 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 >
 >}
 >
-> provozovatel --> UC1
+> obchodnik --> UC1
 >
-> provozovatel --> UC2
+> obchodnik --> UC2
 >
-> provozovatel --> UC3
+> obchodnik --> UC3
 >
-> provozovatel --> UC4
+> obchodnik --> UC4
 >
-> provozovatel --> UC5
+> obchodnik --> UC5
 >
-> obchodnik -up-> UC1
+> provozovatel -up-> UC1
 >
-> obchodnik -up-> UC2
+> provozovatel -up-> UC2
 >
-> obchodnik -up-> UC4
+> provozovatel -up-> UC4
 >
 > UC3 <-- WMS
 >

@@ -30,7 +30,13 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
 >
 >   package Databáze {
 >
->   component "Databázový systém" as DbS `<<Subsystem>>`
+>   component "Databázový systém" as DbS `<<Subsystem>>` {
+>
+>    component ":DBMS"
+>
+>    component "Databáze" as db
+>
+>    }
 >
 >   }
 >
