@@ -1,6 +1,13 @@
 # Hodnocení architektury č. 1
+## Struktura hodnocení
+- [Metodika](#metodika "Metodika hodnocení")
+- [Hodnocení](#hodnoceni "Hodnocení architektury")
+- [Shrnutí](#souhrn "Souhrn hodnocení")
+
 ## Metodika
-Pro hodnocení architektury bude využita ordinální stupnice ([zobrazená níže](#tabulka "Tabulka s ordinální stupnicí")), přičemž tato tabulka bude obsahovat jednotlivé charakteristiky softwarových architektur, dále u každé charakteristiky budou informace, jak moc vybráná architektura splňuje danou vlastnost na škále 1 - 5, dále je zde váha důležitosti vlastnostni architektury, protože ne všechny jsou pro aplikaci vhodné, tedy výsledek je součin čísleního ohodnocení a váhy. Souhrn výsledků hodnocení charakteristik bude doplněn o slovní ohodnocení architektury.
+Pro hodnocení architektury bude využita ordinální stupnice ([zobrazená níže](#tabulka "Tabulka s ordinální stupnicí")), kdy tato tabulka obsahuje slovní ohodnocení a číslené ohodnocení, přičemž číselné ohodnocení bude využito pro posuzování toho, jak zvolená softwarová architektura splňuje specifickou charakteristiku.
+
+Samotné hodnocení bude uvede přičemž tato tabulka bude obsahovat jednotlivé charakteristiky softwarových architektur, dále u každé charakteristiky budou informace, jak moc vybráná architektura splňuje danou vlastnost na škále 1 - 5, dále je zde váha důležitosti vlastnostni architektury, protože ne všechny jsou pro aplikaci vhodné, tedy výsledek je součin čísleního ohodnocení a váhy. Souhrn výsledků hodnocení charakteristik bude doplněn o slovní ohodnocení architektury, které bude uvedeno v [souhrnu](#souhrn "Souhrn hodnocení") tohoto dokumentu.
 
 <div id="tabulka">
 
@@ -22,25 +29,26 @@ Pro hodnocení architektury bude využita ordinální stupnice ([zobrazená ní�
 | Výkonnost          |         |      |          |
 | Recoverability     |         |      |          |
 | Reliability        |         |      |          |
-| Robustnost         |         |      |          |
-| Škálovatelnost     |         |      |          |
+| Robustnost         |         | 80%  |          |
+| Škálovatelnost     |         | 10%  |          |
+| Elasticita         |         |      |          |
 | Konfigurovatelnost |         |      |          |
 | Rozšiřitelnost     |         |      |          |
 | Instalovatelnost   |         |      |          |
 | Znovupoužitelnost  |         |      |          |
-| Lokalizace         |         |      |          |
+| Lokalizace         |         | 10%  |          |
 | Udržovatelnost     |         |      |          |
 | Přenositelnost     |         |      |          |
-| Aktualizovatelnost |         |      |          |
+| Aktualizovatelnost |         | 10%  |          |
 | Podpora            |         |      |          |
 | Zpřístupnění       |         |      |          |
-| Archivovatelnost   |         |      |          |
+| Archivovatelnost   |         | 100% |          |
 | Autentizace        |         |      |          |
 | Autorizace         |         |      |          |
-| Právní             |         |      |          |
+| Právní             |         | 80%  |          |
 | Soukromí           |         |      |          |
 | Zabezpečení        |         |      |          |
-| Použitelnost       |         |      |          |
-| Souhrn             |         |      |          |
+| Použitelnost       |         | 70%  |          |
+| Souhrn             |    -    |   -  |          |
 
 ## Souhrn

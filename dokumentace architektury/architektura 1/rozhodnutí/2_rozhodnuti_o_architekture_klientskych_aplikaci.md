@@ -9,10 +9,10 @@
 Schválené
 
 ## Context
-Existuje požadavek na jednoduchou a lightweight aplikaci pro zařízení využívané prodejci ve stáncích s hot dogy. Stejné požadavky lze přenést na aplikaci určenou pro zákazníky těchto stánků.
+Existuje požadavek na jednoduchou a lightweight aplikaci pro zařízení využívané uživateli prodejního systému, tedy se jedná o obchodníka se stánky, provozovatele stánků a pracovníka správy zásob.
 
 ## Decision
 Budeme využívat vrstvenou monolitickou architekturu pro naše klientské aplikace.
 
 ## Consequences
-Struktura našich klientských aplikací bude rozdělena do vrstev v rámci monolitu (např. dle vzoru MVVM). Výhodou je malá velikost, jednoduchost a testovatelnost aplikací.
+Struktura našich klientských aplikací bude rozdělena do vrstev v rámci monolitu, a to konkrétně architektonický vzor MVVM. Výhodou je malá velikost, jednoduchost a testovatelnost aplikací, přičemž vzor MVVM je dost populární v rámci .NET, tedy většina .NET vývojářů ho zná.

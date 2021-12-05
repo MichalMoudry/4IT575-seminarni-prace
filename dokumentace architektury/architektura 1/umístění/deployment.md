@@ -6,39 +6,41 @@
 #### **Kód diagramu**
 > @startuml
 >
-> node "Klientské zařízení" as client `<<device>>` {
+> left to right direction
 >
->   artifact "Klientská aplikace prodejního systému" `<<application>>`
+> node "Zařízení obchodníka se stánky" as StandsOwnerDevice
 >
-> }
+> node "Zařízení provozovatele stánku" as StandManagerDevice
 >
-> node "Webový server" as webServer `<<device>>` {
+> node "Zařízení pracovníka správy zásob" as WarehouseWorkerDevice
 >
-> node Kestrel `<<execution environment>>` {
+> node "Webový server" as WebServer {
+>
+>   node Kestrel `<<execution environment>>` {
 >
 >   artifact "Aplikace webové API" `<<application>>`
 >
-> }
+>   }
 >
 > }
 >
-> node "Databázový server" as dbServer `<<device>>` {
+> StandsOwnerDevice -- WebServer : HTTP
 >
->   node "MS SQL Server" `<<DBMS>>`
+> StandManagerDevice -- WebServer : HTTP
+>
+> WarehouseWorkerDevice -- WebServer : HTTP
+>
+> node "Databázový server" as DbServer {
+>
+>   node "MS SQL Server" `<<DBMS>>` {
+>
+>   database "Databáze prodejního systému"
+>
+>   }
 >
 > }
 >
-> node "WMS server" as wmsServer `<<device>>`
->
-> node "Social media server" as socialMediaServer `<<device>>`
->
-> client -- webServer : "HTTP"
->
-> webServer -- dbServer : "ODBC"
->
-> webServer -left- wmsServer : "HTTP"
->
-> webServer -- socialMediaServer : "HTTP"
+> WebServer -- DbServer : ODBC
 >
 > @enduml
 
@@ -63,22 +65,7 @@
     - Jde o externí servery vlastníka sociálních sítí, respektive jde o server s API pro práci se sociální sítí vlastníka
 
 ## Context diagram
-![Context diagram](../assets/prodejni_system_deployment_context_diagram.png "Kontextový diagram nasazení prodejního systému")
-
-### **Kód diagramu**
-> @startuml
->
-> node "Prodejní systém" as prodejniSystem
->
-> node WMS
->
-> node "Vlastníci sociálních médií" as socialMediaOwners
->
-> prodejniSystem -- WMS
->
-> prodejniSystem -- socialMediaOwners
->
-> @enduml
+N/A
 
 ## Variability guide
 **Vysoké množství podporovaných klientských zařízení**
