@@ -1,1 +1,0 @@
-# Rozhodnutí o nasazení prodejního systému
