@@ -1,6 +1,6 @@
 # Rozhodnutí o robustnosti klientské aplikace
 ## ID
-4
+5
 
 ## Datum
 05.12.2021

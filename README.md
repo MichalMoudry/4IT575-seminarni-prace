@@ -31,6 +31,6 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 
 ## Zvolené architektury
 - SOA
-    - Proč? -> spojené s ADR
+    - [ADR o využítí SOA](./dokumentace%20architektury/architektura%201/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí SOA")
 - Event driven architecture
     - Proč? -> spojené s ADR
