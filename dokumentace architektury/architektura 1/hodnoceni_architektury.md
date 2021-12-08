@@ -27,7 +27,7 @@ Souhrn výsledků hodnocení charakteristik bude doplněn o slovní ohodnocení 
 | Charakteristika    | Splňuje | Váha | Výsledek | Vysvětlení |
 |--------------------|---------|------|----------|------------|
 | Dostupnost         |    5    | 10%  |   0,5    | Dostupnost je zajištěna nasazením do cloudového prostředí. |
-| Kontinuita         |    3    | 50%  |   1,5    |            |
+| Kontinuita         |    3    | 50%  |   1,5    |     Schopnost zotavit se z pádu je zajištěna pomocí cloudových služeb.      |
 | Výkonnost          |    5    | 50%  |   2,5    | Klientská aplikace je kompilována do nativního kódu pro podporované platformy. Serverová aplikace využívá nejnovější .NET technologie pro dosažení vysokého výkonu. |
 | Recoverability     |    3    | 10%  |   0,3    |     -      |
 | Reliability        |    3    | 50%  |   1,5    |     -      |
