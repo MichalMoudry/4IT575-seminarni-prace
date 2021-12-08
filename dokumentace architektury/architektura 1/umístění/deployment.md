@@ -14,13 +14,27 @@
 >
 > node "Zařízení pracovníka správy zásob" as WarehouseWorkerDevice
 >
+> node "Microsoft Azure" as azure `<<execution environment>>` {
+>
 > node "Webový server" as WebServer {
 >
->   node Kestrel `<<execution environment>>` {
+> node Kestrel `<<execution environment>>` {
 >
->   artifact "Aplikace webové API" `<<application>>`
+> artifact "Aplikace webové API" `<<application>>`
 >
->   }
+> }
+>
+> }
+>
+> node "Databázový server" as DbServer {
+>
+> node "MS SQL Server" `<<DBMS>>` {
+>
+> database "Databáze prodejního systému"
+>
+> }
+>
+> }
 >
 > }
 >
@@ -30,25 +44,19 @@
 >
 > WarehouseWorkerDevice -- WebServer : HTTP
 >
-> node "Databázový server" as DbServer {
->
->   node "MS SQL Server" `<<DBMS>>` {
->
->   database "Databáze prodejního systému"
->
->   }
->
-> }
->
 > WebServer -- DbServer : ODBC
 >
 > @enduml
 
 ## Element catalog
-- **Klientské zařízení**
-    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít libovolný operační systém.
-- **Klientská aplikace prodejního systému**
-    - Jde o klientskou aplikaci našeho prodejního systému, přičemž tato aplikace běží na tenkém klientovi.
+- **Zařízení obchodníka se stánky**
+    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít specifický operační systém (Windows, Android, iOS).
+- **Zařízení provozovatele stánku**
+    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít specifický operační systém (Windows, Android, iOS).
+- **Zařízení pracovníka správy zásob**
+    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít specifický operační systém (Windows, Android, iOS).
+- **Microsoft Azure**
+    - Jde o cloudové prostředí Azure od firmy Microsoft.
 - **Web server**
     - Fyzický server, na kterém běží Kestrel a .NET aplikaci pro webové API. Samozřejmě zde neuvažujeme load balancing, tedy v realitě může existovat několik síťových prvků (reverse proxy, load balancer) před webovým servrem, a také může existovat více fyzických webových serverů.
 - **Kestrel**
@@ -78,6 +86,8 @@ Pro běh aplikace pro webové API je použit Kestrel, tedy aplikace nemusí bě�
 
 ## Rationale
 Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci ESB a HTTP protokolu. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
+
+Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, protože serverová a klientská aplikace je napsaná na platformě .NET, dále vývojářský tým má nejvíce zkušeností s danou cloud platformou.
 
 ## Related Views
 - [Diagram komponent](../moduly/components.md "Diagram komponent")
