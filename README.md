@@ -30,7 +30,7 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 - Backend pro obsluhu klientských aplikací
 
 ## Zvolené architektury
-- SOA
+- Service Oriented Architecture - SOA
     - [ADR o využítí SOA](./dokumentace%20architektury/architektura%201/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí SOA")
-- Event driven architecture
-    - Proč? -> spojené s ADR
+- Event Driven Architecture - EDA
+    - [ADR o využítí SOA](./dokumentace%20architektury/architektura%202/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí EDA")
