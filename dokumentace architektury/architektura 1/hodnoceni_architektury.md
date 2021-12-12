@@ -47,9 +47,10 @@ Souhrn výsledků hodnocení charakteristik bude doplněn o slovní ohodnocení 
 | Autentizace        |    5    | 100% |    5     | .NET má otestované a bezpečné existující systémy pro autentizaci a autorizaci v aplikacích, ale i samotných webových API. |
 | Autorizace         |    5    | 100% |    5     | .NET má otestované a bezpečné existující systémy pro autentizaci a autorizaci v aplikacích, ale i samotných webových API. |
 | Právní             |    5    | 80%  |    4     | Funkcionalita pro export dat do účetních systémů odpovídá požadovanému formátu, dále jsou uchovávána učetní data po stanovenou dobu. |
-| Soukromí           |    5    | 80%  |    4     | Klientské aplikace nekomunikují mezi sebou a serverová aplikace má kvalitní autentizační a autorizační mechanismy. |
+| Soukromí           |    5    | 50%  |   2,5    | Klientské aplikace nekomunikují mezi sebou a serverová aplikace má kvalitní autentizační a autorizační mechanismy. |
 | Zabezpečení        |    5    | 80%  |    4     | Zabezpečení dat je zajištěno poskytovatelem cloudových služeb a zvolené technologie jsou aktuální a nejsou zatím známé exploity. |
 | Použitelnost       |    3    | 50%  |   1,5    | Klientská aplikace je dostatečně použitelná, protože není využita ověřená UI knihovna, ale jsou použity nativní UI prvky cílených platforem. |
-| Souhrn             |    -    |   -  | 44,1 / 48,75 |      -     |
+| Souhrn             |    -    |   -  | 42,6 / 47,25 |      -     |
 
 ## Souhrn
+Hodnocení tohoto řešení dosahuje 42,6 bodů z 47,25 možných (v procentech **90,16%**), což naznačuje, že naše rozhodnutí spojené s architekturou prodejního systému jsou validní. Důležité je zde zmínit skutečnost, že důvodem pro vysoké hodnocení je využití cloudové platformy Azure, a také využití moderních technologií pro multiplatformní vývoj (.NET, accessibility frameworky atd.), což jsme mohli využít díky žádným vážným omezení rozpočtu na systém, přičemž hlavně nasazení v cloudu zajišťuje dost aspektů spojených s dostupností, škálovatelností, zabezpečením a mnoho dalších charakteristik. Co se týče požadavku na dobu dodání, tak tady je výhodou, že vývojářský tým má zkušenosti s platformami .NET a Azure, přičemž deployment .NET aplikace na Azure službu je relativně snadný díky dedikovaným nástrojům, což je podpořeno jednoduchou serverovou a klientskou aplikací.
