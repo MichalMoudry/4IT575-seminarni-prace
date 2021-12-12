@@ -2,9 +2,9 @@
 Repositář s dokumenty, které se týkají seminární práce v rámci předmětu 4IT575 - Softwarové architektury.
 
 ## Obsah repositáře
-- [Popis aplikace](https://github.com/MichalMoudry/4IT575-seminarni-prace#popis-aplikace "Popis aplikace")
-- [Dokumentace architektury č. 1](https://github.com/MichalMoudry/4IT575-seminarni-prace/tree/main/dokumentace%20architektury/architektura%201 "Dokumentace architektury č. 1")
-- [Dokumentace architektury č. 2](https://github.com/MichalMoudry/4IT575-seminarni-prace/tree/main/dokumentace%20architektury/architektura%202 "Dokumentace architektury č. 2")
+- [Popis aplikace](#popis-aplikace "Popis aplikace")
+- [Dokumentace architektury č. 1](./dokumentace%20architektury/architektura%201 "Dokumentace architektury č. 1")
+- [Dokumentace architektury č. 2](./dokumentace%20architektury/architektura%202 "Dokumentace architektury č. 2")
 
 ## Popis aplikace
 Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele stánků s párky v rohlíku prodejní systém.
@@ -28,6 +28,9 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 ### Aplikace v systému
 - Klientská aplikace pro prodejní systém
 - Backend pro obsluhu klientských aplikací
+
+### Zdroj
+PÍSEK, Slavoj, 2021. Zadání seminární práce z předmětu 4IT575 – Softwarové Architektury. 10. listopad 2021.
 
 ## Zvolené architektury
 - Service Oriented Architecture - SOA
