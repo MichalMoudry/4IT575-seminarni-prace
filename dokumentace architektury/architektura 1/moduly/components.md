@@ -95,7 +95,7 @@ N/A
 Pro konfiguraci přístupu k datům, tak aby byla snadná podpora libovolného dodavatele databáze, tak je třeba psát SQL dotazy, tak aby neobsahovaly syntax specifický pro nějakého dodavatele databáze.
 
 ## Rationale
-Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozhodnutí/3_rozhodnuti_o_architekture_backendu.md "Třetí architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
+Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozhodnutí/4_rozhodnuti_o_architekture_backendu.md "Třetí architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
 
 ## Related Views
 - [Deployment view](../umístění/deployment.md "Deployment view")
