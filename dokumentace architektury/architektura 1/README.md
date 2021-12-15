@@ -1,6 +1,7 @@
 # Dokumentace architektury č. 1
 ## Struktura dokumentace
 - [Přehled systému](#system-overview "Přehled systému")
+- [Architektonická rozhodnutí](./rozhodnutí "Architektonická rozhodnutí")
 - [Diagram komponent](./moduly/components.md "Diagram komponent")
 - [High level přehled modulů](./moduly/module_view.md "High level přehled modulů")
 - [Diagram nasazení](./umístění/deployment.md "Diagram nasazení")
