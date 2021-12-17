@@ -3,6 +3,19 @@
 ### UML
 ![Component diagram](../assets/prodejni_system_component_diagram.png "Diagram komponent prodejního systému")
 
+### Vysvětlivka pro diagram
+- **Komponenta** - Jde o komponentu modelovaného systému.
+
+![Component](../assets/diagram_legend_assets/component.png "Znak komponenty")
+
+- **Rozhraní** - Jde o rozhraní poskytované nebo konzumované komponentou.
+
+![Interface](../assets/diagram_legend_assets/interface.png "Znak rozhraní")
+
+- **Balíček** - Jde o seskupení jiných prvků diagramu do jednoho logického celku.
+
+![Package](../assets/diagram_legend_assets/package.png "Znak balíčku") 
+
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 

@@ -3,6 +3,19 @@
 ### UML
 ![Deployment diagram](../assets/prodejni_system_deployment_diagram.png "Deployment diagram prodejního systému")
 
+### Vysvětlivka diagramu
+- **Node** (uzel) - Jde o fyzické zařízení nebo prostředí pro zpracování softwaru (tzn. execution environment).
+
+![Node](../assets/diagram_legend_assets/node.png "Znak uzlu")
+
+- **Artifact** (artefakt) - Artefakt označuje fyzický výskyt softwaru.
+
+![Artifact](../assets/diagram_legend_assets/artifact.png "Znak artefaktu")
+
+- **Database** (databáze) - Jde o znak databáze, která je součástí SŘBD.
+
+![Database](../assets/diagram_legend_assets/database.png "Znak databáze")
+
 #### **Kód diagramu**
 > @startuml
 >

@@ -2,6 +2,15 @@
 ## Primary presentation
 ![High level module view](../assets/prodejni_system_high_level_module_view.png "Diagram vrstev aplikací prodejního systému")
 
+### Vysvětlivka diagramu
+- **Package** (balíček) - Označuje modul (resp. komponentu) vystupující v modelovaném systému.
+
+![Package](../assets/diagram_legend_assets/package.png)
+
+- **Folder** (složka) - Jde o šložku v rámci modulu.
+
+![Folder](../assets/diagram_legend_assets/folder.png)
+
 ### Kód diagramu
 > @startuml
 >
