@@ -1,0 +1,13 @@
+<h1 id="rozhodnutí-o-architektuře-klientských-aplikací">Rozhodnutí o architektuře klientských aplikací</h1>
+<h2 id="id">ID</h2>
+<p>3</p>
+<h2 id="datum">Datum</h2>
+<p>19.11.2021</p>
+<h2 id="status">Status</h2>
+<p>Schválené</p>
+<h2 id="context">Context</h2>
+<p>Existuje požadavek na jednoduchou a lightweight aplikaci pro zařízení využívané uživateli prodejního systému, tedy se jedná o obchodníka se stánky, provozovatele stánků a pracovníka správy zásob.</p>
+<h2 id="decision">Decision</h2>
+<p>Budeme využívat vrstvenou monolitickou architekturu (= monolitický frontend) pro naše klientské aplikace.</p>
+<h2 id="consequences">Consequences</h2>
+<p>Struktura našich klientských aplikací bude rozdělena do vrstev v rámci monolitu, a to konkrétně architektonický vzor MVVM. Výhodou je malá velikost, jednoduchost a testovatelnost aplikací, přičemž vzor MVVM je dost populární v rámci .NET, tedy většina .NET vývojářů ho zná.</p>

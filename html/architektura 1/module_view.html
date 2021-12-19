@@ -1,0 +1,96 @@
+<h1 id="high-level-module-view">High Level Module View</h1>
+<h2 id="primary-presentation">Primary presentation</h2>
+<figure>
+<img src="../assets/prodejni_system_high_level_module_view.png" title="Diagram vrstev aplikací prodejního systému" alt="High level module view" /><figcaption aria-hidden="true">High level module view</figcaption>
+</figure>
+<h3 id="vysvětlivka-diagramu">Vysvětlivka diagramu</h3>
+<ul>
+<li><strong>Package</strong> (balíček) - Označuje modul (resp. komponentu) vystupující v modelovaném systému.</li>
+</ul>
+<figure>
+<img src="../assets/diagram_legend_assets/package.png" alt="Package" /><figcaption aria-hidden="true">Package</figcaption>
+</figure>
+<ul>
+<li><strong>Folder</strong> (složka) - Jde o šložku v rámci modulu.</li>
+</ul>
+<figure>
+<img src="../assets/diagram_legend_assets/folder.png" alt="Folder" /><figcaption aria-hidden="true">Folder</figcaption>
+</figure>
+<h3 id="kód-diagramu">Kód diagramu</h3>
+<blockquote>
+<p><span class="citation" data-cites="startuml">@startuml</span></p>
+<p>package “Klientská aplikace” as clientApp {</p>
+<p>folder “Views”</p>
+<p>folder “ViewModels”</p>
+<p>folder “Services”</p>
+<p>}</p>
+<p>package “Aplikace webové API” as webApp {</p>
+<p>folder “DataAccess”</p>
+<p>folder “Migrations”</p>
+<p>folder “Controllers”</p>
+<p>}</p>
+<p>package “Sdílená knihovna” as sharedLibrary {</p>
+<p>folder “Models”</p>
+<p>}</p>
+<p>webApp .up.&gt; sharedLibrary : <code>"&lt;&lt;use&gt;&gt;"</code></p>
+<p>clientApp ..&gt; sharedLibrary : <code>"&lt;&lt;use&gt;&gt;"</code></p>
+<p>clientApp ..&gt; webApp</p>
+<p><span class="citation" data-cites="enduml">@enduml</span></p>
+</blockquote>
+<h2 id="element-catalog">Element catalog</h2>
+<ul>
+<li><strong>Aplikace webové API</strong>
+<ul>
+<li>Jedná se o aplikaci, která realizuje webové API a služby, přičemž tato aplikace běží na webovém serveru.</li>
+</ul></li>
+<li><strong>Klientská aplikace</strong>
+<ul>
+<li>Jde o aplikaci prodejního systému, která běží na klientském zařízení.</li>
+</ul></li>
+<li><strong>Sdílená knihovna</strong>
+<ul>
+<li>Jde o knihovnu, která je sdílená webovou aplikací a klientskou aplikací za účelem sdílení doménového modelu mezi nimi.</li>
+</ul></li>
+<li><strong>Views</strong>
+<ul>
+<li>Jedná se o složku s tzv. Views, což jsou soubory definující uživatelské rozhraní (strukura, styly, animace, vazby na ViewModels a jiné).</li>
+</ul></li>
+<li><strong>ViewModels</strong>
+<ul>
+<li>Jde o složku s tzv. ViewModels, což jsou soubory obsahující vlastnosti a příkazy, které může View využívat. Výhodou tohoto oddělení o UI je lepší testovatelnost.</li>
+</ul></li>
+<li><strong>Models</strong>
+<ul>
+<li>Jde o složku s tzv. Models, což jsou třídy zapouzdřující data aplikace, tedy lze je považovat za doménový model aplikace, což obvykle zahrnuje business a validační logiku.</li>
+</ul></li>
+<li><strong>Services</strong>
+<ul>
+<li>Jedná se o složku s tzv. Services, což jsou služby pro abstrakci metod ve ViewModels, tedy například místo toho, aby každý ViewModel implementoval zobrazení dialogových oken, tak to lze přesunout do Service třídy a využít ji skrze Dependency Injection.</li>
+</ul></li>
+<li><strong>Controllers</strong>
+<ul>
+<li>Jedná se o složku se soubory obsahující metody, které jsou namapovány na konkrétní endpointy služeb nebo mohou být namapovány automaticky.</li>
+</ul></li>
+<li><strong>DataAccess</strong>
+<ul>
+<li>Jde o složku na serverové aplikaci se soubory obsahující operace s databázovými tabulkami, které jsou definované v databázovém kontextu, který je ve stejné složce.</li>
+</ul></li>
+<li><strong>Migrations</strong>
+<ul>
+<li>Jde o složku se soubory databázových migrací a databázového snapshotu, které jsou využívané EF Core.</li>
+</ul></li>
+</ul>
+<h2 id="variability-guide">Variability guide</h2>
+<p>None</p>
+<h2 id="other-information">Other information</h2>
+<p>Pro klientskou aplikace je zvolen architektonický vzor MVVM (<a href="#mvvm" title="Komponenty MVVM">znázorněn níže</a>), což odpovídá složkám v elementu <em>Klientská aplikace</em>, přičemž modely jsou sdílené s webovou API skrze sdílenou knihovnu, což je dynamicky linkovaná knihovna v rámci softwarového řešení, jelikož jsou obě aplikace a knihovna řešena v rámci .NET, tak není třeba řešit interoperabilita.</p>
+<div id="mvvm">
+<figure>
+<img src="../assets/mvvm.png" title="Obrázek s komponentami architektonického vzoru MVVM" alt="MVVM_komponenty" /><figcaption aria-hidden="true">MVVM_komponenty</figcaption>
+</figure>
+</div>
+<p>Výhodou MVVM vzoru je vysoká znalost mezi .NET vývojáři.</p>
+<h2 id="related-views">Related views</h2>
+<ul>
+<li><a href="../moduly/components.md" title="Diagram komponent prodejního systému">Diagram komponent</a></li>
+</ul>

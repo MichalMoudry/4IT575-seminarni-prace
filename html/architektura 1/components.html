@@ -1,0 +1,116 @@
+<h1 id="component-view">Component view</h1>
+<h2 id="primary-presentation">Primary presentation</h2>
+<h3 id="uml">UML</h3>
+<figure>
+<img src="../assets/prodejni_system_component_diagram.png" title="Diagram komponent prodejního systému" alt="Component diagram" /><figcaption aria-hidden="true">Component diagram</figcaption>
+</figure>
+<h3 id="vysvětlivka-pro-diagram">Vysvětlivka pro diagram</h3>
+<ul>
+<li><strong>Komponenta</strong> - Jde o komponentu modelovaného systému.</li>
+</ul>
+<figure>
+<img src="../assets/diagram_legend_assets/component.png" title="Znak komponenty" alt="Component" /><figcaption aria-hidden="true">Component</figcaption>
+</figure>
+<ul>
+<li><strong>Rozhraní</strong> - Jde o rozhraní poskytované nebo konzumované komponentou.</li>
+</ul>
+<figure>
+<img src="../assets/diagram_legend_assets/interface.png" title="Znak rozhraní" alt="Interface" /><figcaption aria-hidden="true">Interface</figcaption>
+</figure>
+<ul>
+<li><strong>Balíček</strong> - Jde o seskupení jiných prvků diagramu do jednoho logického celku.</li>
+</ul>
+<figure>
+<img src="../assets/diagram_legend_assets/package.png" title="Znak balíčku" alt="Package" /><figcaption aria-hidden="true">Package</figcaption>
+</figure>
+<h4 id="kód-diagramu"><strong>Kód diagramu</strong></h4>
+<p>Kód diagramu je pro tvorbu diagramu přes PlantUML.</p>
+<blockquote>
+<p><span class="citation" data-cites="startuml">@startuml</span></p>
+<p>left to right direction</p>
+<p>component “Klientská aplikace” as client <code>&lt;&lt;Subsystem&gt;&gt;</code></p>
+<p>package Backend {</p>
+<p>component “Webový server” as webServer <code>&lt;&lt;Subsystem&gt;&gt;</code> {</p>
+<p>component “:Slevová služba” as SaleCampainService</p>
+<p>component “:Služba pro tržby” as SalesService</p>
+<p>component “:Exportovací služba” as ExportService</p>
+<p>component “:Služba pro integraci se sociálními sítěmi” as SocialMediaService</p>
+<p>component “:Služba pro zásoby” as StocksService</p>
+<p>}</p>
+<p>package Databáze {</p>
+<p>component “Databázový systém” as DbS <code>&lt;&lt;Subsystem&gt;&gt;</code> {</p>
+<p>component “:DBMS”</p>
+<p>component “Databáze” as db</p>
+<p>}</p>
+<p>}</p>
+<p>ODBC – DbS</p>
+<p>SaleCampainService –&gt; ODBC</p>
+<p>SalesService –&gt; ODBC</p>
+<p>StocksService -down-&gt; ODBC</p>
+<p>ExportService –&gt; ODBC</p>
+<p>}</p>
+<p>HTTP – webServer</p>
+<p>client –&gt; HTTP</p>
+<p>SocialMediaService -up-&gt; ExternalSocialMediaAPI</p>
+<p>StocksService –&gt; WarehouseMgmtSystemAPI</p>
+<p><span class="citation" data-cites="enduml">@enduml</span></p>
+</blockquote>
+<h2 id="element-catalog">Element catalog</h2>
+<ul>
+<li><strong>Klientská aplikace</strong>
+<ul>
+<li>Jedná se o aplikaci, která běží na klientském zařízení, tedy v kontextu tohoto řešení jde o aplikaci pro provozovatele stánků a obchodníka se stánky.</li>
+</ul></li>
+<li><strong>Webový server</strong>
+<ul>
+<li>Jde o komponentu či komponenty (neuvažujeme load balancing), která slouží pro hostování webové aplikace pro webové API a služby.</li>
+</ul></li>
+<li><strong>Slevová služba</strong>
+<ul>
+<li>Jedná se o službu pro práci se slevovými akcemi, tedy pro jejich správu, což zahrnuje jejich vytváření aktualizování a smazání.</li>
+</ul></li>
+<li><strong>Služba pro tržby</strong>
+<ul>
+<li>Jde o službu, která realizuje funkcionalitu pro sledování tržeb podle času a místa.</li>
+</ul></li>
+<li><strong>Služba pro zásoby</strong>
+<ul>
+<li>Jde o službu, která realizuje funkcionalitu pro posílání aktualizací zásob mobilním pracovníkům pro správu zásob. Důvodem existence této služby, je skutečnost, že tato služba může mít “real-time” spojení (např. skrze SignalR) s Warehouse Management systémem, a tedy je schopno poskytovat klientské aplikaci aktuální data na požádání (= klientská aplikace tedy nemusí dané real-time spojení realizovat =&gt; úspora výpočteních prostředků klientského zařízení). Samozřejmě tato služba také může využívat databázi pro ukládání stavu zásob, pokud není vyloženě potřeba, aby konkrétní uživatel věděl měl přehled o aktuálním stavu zásob.</li>
+<li>WarehouseMgmtSystemAPI:
+<ul>
+<li>Jde o API externího warehouse management systému, které slouží pro sbírání aktuálních dat o stavu zásob, přičemž na základě této informace služba pro zásoby vytváří aktualizace v databázi, které si klientské zařízení stahují.</li>
+</ul></li>
+</ul></li>
+<li><strong>Exportovací služba</strong>
+<ul>
+<li>Tato služba má na požadavek vybrat vhodná data z databáze, následně je převést do vhodného formátu pro účetní nástroje a poslat je nazpět.</li>
+</ul></li>
+<li><strong>Služba pro integraci se sociálními sítěmi</strong>
+<ul>
+<li>Jedná se o službu pro integraci s používanými sociálními sítěmi, tedy klientské aplikace nemusí využívat SDK daných sítí, ale stačí, aby využívali tuto službu. Ve výsledku se tedy jedná o abstrakci konkrétních API sociálních sítí, což třeba lze využít v případě, že jedna informace (= post na sociální síti) lze upravit do formátu pro více než jednu sociální síť (= informace o polozce stánku s hotdogy bude nahrána např. na instagram a twitter zároveň).</li>
+<li>ExternalSocialMediaAPI:
+<ul>
+<li>Jde o různé externí API sociálních sítí, které jsou využívané touto službou, tak aby klientská aplikace nemusela přímo pracovat s danými API.</li>
+</ul></li>
+</ul></li>
+<li><strong>Databázový systém</strong>
+<ul>
+<li>Jedná se o databázový systém, který tedy obsahuje databáze prodejního systémů a systém řízení báze dat (SŘBD).</li>
+<li>ODBC:
+<ul>
+<li>Známé rozhraní pro komunikaci se SŘBD za cílem abstrakce od konkrétních databázových systémů.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="context-diagram">Context diagram</h2>
+<p>N/A</p>
+<h2 id="variability-guide">Variability guide</h2>
+<p><strong>Konfigurovatelnost přístupu k datům</strong></p>
+<p>Pro konfiguraci přístupu k datům, tak aby byla snadná podpora libovolného dodavatele databáze, tak je třeba psát SQL dotazy, tak aby neobsahovaly syntax specifický pro nějakého dodavatele databáze.</p>
+<h2 id="rationale">Rationale</h2>
+<p>Rozdělení komponent, tak aby odpovídali SOA souvisí s <a href="../rozhodnutí/4_rozhodnuti_o_architekture_backendu.md" title="Třetí architektonické rozhodnutí">třetím ADR</a>, kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.</p>
+<h2 id="related-views">Related Views</h2>
+<ul>
+<li><a href="../umístění/deployment.md" title="Deployment view">Deployment view</a></li>
+<li><a href="../moduly/module_view.md" title="High Level Module View">High Level Module View</a></li>
+</ul>

@@ -1,0 +1,14 @@
+<h1 id="rozhodnutí-o-architektuře-backendu">Rozhodnutí o architektuře backendu</h1>
+<h2 id="id">ID</h2>
+<p>4</p>
+<h2 id="datum">Datum</h2>
+<p>05.12.2021</p>
+<h2 id="status">Status</h2>
+<p>Schválené</p>
+<h2 id="context">Context</h2>
+<p>V rámci zadání je požadavek, že řešení by nemělo být třeba vyměnit za 3 roky, dále je také stanovené, že je důležitá doba dodání.</p>
+<h2 id="decision">Decision</h2>
+<p>Backend bude realizovaný serverovou aplikací, která odpovídá aplikačnímu modelu <code>ASP.NET Core Web API</code>.</p>
+<h2 id="consequences">Consequences</h2>
+<p>Pro serverovou aplikaci budeme využívat <code>ASP.NET Core</code> aplikaci, která bude poskytovat klientským zařízením služby skrze webové API (REST architektura rozhraní). Důvodem zvolení této technologie je jednoduchost aplikace, kdy lze využít tzv. minimální API, což pomůže rychle vytvořit požadované služby a jejich API. Dalším důvodem je, že vývojářský tým se primárně zaměřuje na technologii .NET, tedy vývoj serverové aplikace by měl zabrat nejméně času oproti aplikacím využívající jiné technologie.</p>
+<p>Ve výsledku využití <code>ASP.NET Core Web API</code> bude mít za následek to, že vývoj bude rychlejší a výsledná aplikace bude kvalitnější, a také bude využívat nejnovější technologie v rámci platformy .NET, přičemž .NET dlouhodobě podporuje různé verze platformy (dalším bonusem je i snadný upgrade na nové verze platformy pro existující aplikace).</p>
