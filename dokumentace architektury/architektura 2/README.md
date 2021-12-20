@@ -1,6 +1,7 @@
 # Dokumentace architektury č. 2
 ## Struktura dokumentace
 - [Přehled systému](#system-overview "Přehled systému")
+- [Architektonická rozhodnutí](./rozhodnutí "Architektonická rozhodnutí")
 - [Diagram komponent](./moduly/components.md "Diagram komponent")
 - [High level přehled modulů](./moduly/module_view.md "High level přehled modulů")
 - [Diagram nasazení](./umístění/deployment.md "Diagram nasazení")
@@ -21,6 +22,19 @@ Funkcionalita prodejního systému je popsána níže pomocí případů níže:
 - **UC5**: Ze systému by mělo jít exportovat informace ve formátu importovatelném účetními nástroji.
 
 ![UseCase diagram](./assets/prodejni_system_usecase_diagram.png "Use Case diagram prodejního systému")
+
+#### **Vysvětlivka diagramu**
+- **Use case** (případ užití) - Jde o funkci systému.
+
+![Use case](./assets/diagram_legend_assets/usecase.png "Značka pro případ užití")
+
+- **Actor** (Aktor) - Jde o člověka nebo systém, který komunikuje se systémem.
+
+![Actor](./assets/diagram_legend_assets/actor.png "Značka pro aktora")
+
+- **Ohraničení systému** - Jde o grafické vymezení modelovaného systému.
+
+![System boundary](./assets/diagram_legend_assets/system_boundary.png "Značka pro ohraničení modelovaného systému")
 
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
