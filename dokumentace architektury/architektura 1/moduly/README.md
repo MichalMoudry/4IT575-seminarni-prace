@@ -14,7 +14,7 @@
 ### Kód diagramu
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
-Odkaz na textový soubor s kódem: [odkaz](../diagram_codes/modules_diagram.txt).
+Odkaz na textový soubor s kódem: [odkaz](./assets/diagram_codes/modules_diagram.txt).
 
 ---
 
@@ -57,4 +57,4 @@ Výhodou MVVM vzoru je vysoká znalost mezi .NET vývojáři.
 ---
 
 ## Related views
-- [Diagram komponent](../moduly/components.md "Diagram komponent prodejního systému")
+- [Diagram komponent](../moduly/ "Diagram komponent prodejního systému")

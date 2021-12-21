@@ -19,7 +19,7 @@
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
-Odkaz na textový soubor s kódem: [odkaz](../diagram_codes/component_diagram.txt).
+Odkaz na textový soubor s kódem: [odkaz](./assets/diagram_codes/component_diagram.txt).
 
 ---
 
@@ -67,5 +67,5 @@ Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozh
 ---
 
 ## Related Views
-- [Deployment view](../umístění/deployment.md "Deployment view")
-- [High Level Module View](../moduly/module_view.md "High Level Module View")
+- [Deployment view](../umístění "Deployment view")
+- [High Level Module View](../moduly "High Level Module View")
