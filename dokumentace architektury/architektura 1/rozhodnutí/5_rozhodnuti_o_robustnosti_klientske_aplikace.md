@@ -1,4 +1,5 @@
 # Rozhodnutí o robustnosti klientské aplikace
+
 ## ID
 5
 

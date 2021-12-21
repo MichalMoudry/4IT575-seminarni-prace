@@ -1,4 +1,5 @@
 # Rozhodnutí o celkové architektuře systému
+
 ## ID
 2
 

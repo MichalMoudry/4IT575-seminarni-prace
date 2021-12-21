@@ -17,49 +17,11 @@
 ![Database](../assets/diagram_legend_assets/database.png "Znak databáze")
 
 #### **Kód diagramu**
-> @startuml
->
-> left to right direction
->
-> node "Zařízení obchodníka se stánky" as StandsOwnerDevice
->
-> node "Zařízení provozovatele stánku" as StandManagerDevice
->
-> node "Zařízení pracovníka správy zásob" as WarehouseWorkerDevice
->
-> node "Microsoft Azure" as azure `<<execution environment>>` {
->
-> node "Webový server" as WebServer {
->
-> node Kestrel `<<execution environment>>` {
->
-> artifact "Aplikace webové API" `<<application>>`
->
-> }
->
-> }
->
-> node "Databázový server" as DbServer {
->
-> node "MS SQL Server" `<<DBMS>>` {
->
-> database "Databáze prodejního systému"
->
-> }
->
-> }
->
-> }
->
-> StandsOwnerDevice -- WebServer : HTTP
->
-> StandManagerDevice -- WebServer : HTTP
->
-> WarehouseWorkerDevice -- WebServer : HTTP
->
-> WebServer -- DbServer : ODBC
->
-> @enduml
+Kód diagramu je pro tvorbu diagramu přes PlantUML.
+
+Odkaz na textový soubor s kódem: [odkaz](../diagram_codes/deployment_diagram.txt).
+
+---
 
 ## Element catalog
 - **Zařízení obchodníka se stánky**
@@ -85,8 +47,12 @@
 - **Social media server**
     - Jde o externí servery vlastníka sociálních sítí, respektive jde o server s API pro práci se sociální sítí vlastníka
 
+---
+
 ## Context diagram
 N/A
+
+---
 
 ## Variability guide
 **Vysoké množství podporovaných klientských zařízení**
@@ -97,10 +63,14 @@ Klientská aplikace prodejního systému by měla být multiplatformní, aby už
 
 Pro běh aplikace pro webové API je použit Kestrel, tedy aplikace nemusí běžet jen na Windows serveru (IIS), ale je podporovanán i Linux (nginx, Apache).
 
+---
+
 ## Rationale
 Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci ESB a HTTP protokolu. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
 
 Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, protože serverová a klientská aplikace je napsaná na platformě .NET, dále vývojářský tým má nejvíce zkušeností s danou cloud platformou.
+
+---
 
 ## Related Views
 - [Diagram komponent](../moduly/components.md "Diagram komponent")

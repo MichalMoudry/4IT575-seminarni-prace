@@ -1,0 +1,43 @@
+@startuml
+
+left to right direction
+
+node "Zařízení obchodníka se stánky" as StandsOwnerDevice
+
+node "Zařízení provozovatele stánku" as StandManagerDevice
+
+node "Zařízení pracovníka správy zásob" as WarehouseWorkerDevice
+
+node "Microsoft Azure" as azure <<execution environment>> {
+
+    node "Webový server" as WebServer {
+
+        node Kestrel <<execution environment>> {
+
+            artifact "Aplikace webové API" <<application>>
+
+        }
+
+    }
+
+    node "Databázový server" as DbServer {
+
+        node "MS SQL Server" <<DBMS>> {
+
+            database "Databáze prodejního systému"
+
+        }
+
+    }
+
+}
+
+StandsOwnerDevice -- WebServer : HTTP
+
+StandManagerDevice -- WebServer : HTTP
+
+WarehouseWorkerDevice -- WebServer : HTTP
+
+WebServer -- DbServer : ODBC
+
+@enduml
