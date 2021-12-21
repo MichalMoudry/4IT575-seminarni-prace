@@ -12,41 +12,11 @@
 ![Folder](../assets/diagram_legend_assets/folder.png)
 
 ### Kód diagramu
-> @startuml
->
-> package "Klientská aplikace" as clientApp {
->
-> folder "Views"
->
-> folder "ViewModels"
->
-> folder "Services"
->
-> }
->
-> package "Aplikace webové API" as webApp {
->
-> folder "DataAccess"
->
-> folder "Migrations"
->
-> folder "Controllers"
->
-> }
->
-> package "Sdílená knihovna" as sharedLibrary {
->
-> folder "Models"
->
-> }
->
-> webApp .up.> sharedLibrary : `"<<use>>"`
->
-> clientApp ..> sharedLibrary : `"<<use>>"`
- >
-> clientApp ..> webApp
->
-> @enduml
+Kód diagramu je pro tvorbu diagramu přes PlantUML.
+
+Odkaz na textový soubor s kódem: [odkaz](../diagram_codes/modules_diagram.txt).
+
+---
 
 ## Element catalog
 - **Aplikace webové API**
@@ -70,19 +40,21 @@
 - **Migrations**
     - Jde o složku se soubory databázových migrací a databázového snapshotu, které jsou využívané EF Core.
 
+---
+
 ## Variability guide
 None
 
-## Other information
-Pro klientskou aplikace je zvolen architektonický vzor MVVM ([znázorněn níže](#mvvm "Komponenty MVVM")), což odpovídá složkám v elementu *Klientská aplikace*, přičemž modely jsou sdílené s webovou API skrze sdílenou knihovnu, což je dynamicky linkovaná knihovna v rámci softwarového řešení, jelikož jsou obě aplikace a knihovna řešena v rámci .NET, tak není třeba řešit interoperabilita.
+---
 
-<div id="mvvm">
+## Other information
+Pro klientskou aplikace je zvolen architektonický vzor MVVM (znázorněn níže), což odpovídá složkám v elementu *Klientská aplikace*, přičemž modely jsou sdílené s webovou API skrze sdílenou knihovnu, což je dynamicky linkovaná knihovna v rámci softwarového řešení, jelikož jsou obě aplikace a knihovna řešena v rámci .NET, tak není třeba řešit interoperabilita.
 
 ![MVVM_komponenty](../assets/mvvm.png "Obrázek s komponentami architektonického vzoru MVVM")
 
-</div>
-
 Výhodou MVVM vzoru je vysoká znalost mezi .NET vývojáři.
+
+---
 
 ## Related views
 - [Diagram komponent](../moduly/components.md "Diagram komponent prodejního systému")

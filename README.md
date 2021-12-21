@@ -32,6 +32,9 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 ### Zdroj
 PÍSEK, Slavoj, 2021. Zadání seminární práce z předmětu 4IT575 – Softwarové Architektury. 10. listopad 2021.
 
+## Správa dokumentace
+Správa dokumentace by měla být v souladu s contributing guidelines tohoto repositáře (viz. [Contributing guidelines](./CONTRIBUTING.md "Contributing guidelines")).
+
 ## Zvolené architektury
 - Service Oriented Architecture - SOA
     - [ADR o využítí SOA](./dokumentace%20architektury/architektura%201/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí SOA")

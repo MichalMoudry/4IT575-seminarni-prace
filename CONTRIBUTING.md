@@ -13,12 +13,29 @@ Pokud narazíte na problém s dokumentací libovolné architektury, tak nejdří
 V rámci tohoto repositáře se nikomu nepřiřazují problémy, ale pokud máte řešení nějakého konkrétního problémů, tak otevřte PR spojené s daným problémem.
 
 ## Provádění změn
+Provádění změn lze provádět skrze webový prohlížeč, kdy lze editovat stránky dokumentace přímo. Dále lze provádět změny lokálně na vlastní větvy (nebo forku repositáře), a pak vytvářet Pull Request se změnami.
 
+### Provádění změn lokálně
+1. Nainstalovat Git
+2. Fork repositáře
+    - Pomocí GitHub Desktop
+        - [Začínáme s GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop "Začínáme s GitHub Desktop")
+        - [Fork pomocí GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop "Fork pomocí GitHub Desktop")
+    - Pomocí příkazového řádku (CLI)
+        - [Fork pomocí CLI](https://docs.github.com/en/get-started/quickstart/fork-a-repo#fork-an-example-repository "Fork pomocí CLI")
+    - Pomocí GitHub CodeSpaces
+        - [Fork, úprava a zobrazení náhledu](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace)
+3. Provedení změn v repositáři
+4. Commit změn
+5. Vytvoření PR
 
 ## Commit změn
-
+Poté co jste provedli změny v repositáři, tak je třeba provést tzv. stage změn (příkaz git add), a pak je třeba provést commit změn s následným push commitu s vhodnou zprávou.
 
 ## Pull Request (PR)
+PR můžete otevírat skrze GitHub.com, GitHub Desktop, CLI a jiné.
+
+Pokud budete mít problémy s konflikty, tak se můžete podívat na [git tutoriál](https://lab.github.com/githubtraining/managing-merge-conflicts "git tutoriál"), který vám s tím může pomoct.
 
 ### Merge PR
 Změny do dokumentace potvrzuje architekt nebo osoba, jež má na starost dokumentaci architektury.

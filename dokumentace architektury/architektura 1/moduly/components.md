@@ -19,61 +19,9 @@
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
-> @startuml
->
-> left to right direction
->
-> component "Klientská aplikace" as client `<<Subsystem>>`
->
-> package Backend {
->
->   component "Webový server" as webServer `<<Subsystem>>` {
->
->   component ":Slevová služba" as SaleCampainService
->
->   component ":Služba pro tržby" as SalesService
->
->   component ":Exportovací služba" as ExportService
->
->   component ":Služba pro integraci se sociálními sítěmi" as SocialMediaService
->
->   component ":Služba pro zásoby" as StocksService
->
->   }
->
->   package Databáze {
->
->   component "Databázový systém" as DbS `<<Subsystem>>` {
->
->    component ":DBMS"
->
->    component "Databáze" as db
->
->    }
->
->   }
->
->   ODBC -- DbS
->
->   SaleCampainService --> ODBC
->
->   SalesService --> ODBC
->
->   StocksService -down-> ODBC
->
->   ExportService --> ODBC
->
-> }
->
-> HTTP -- webServer
->
-> client --> HTTP
->
-> SocialMediaService -up-> ExternalSocialMediaAPI
->
-> StocksService --> WarehouseMgmtSystemAPI
->
-> @enduml
+Odkaz na textový soubor s kódem: [odkaz](../diagram_codes/component_diagram.txt).
+
+---
 
 ## Element catalog
 - **Klientská aplikace**
@@ -99,16 +47,24 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
     - ODBC:
         - Známé rozhraní pro komunikaci se SŘBD za cílem abstrakce od konkrétních databázových systémů.
 
+---
+
 ## Context diagram
 N/A
+
+---
 
 ## Variability guide
 **Konfigurovatelnost přístupu k datům**
 
 Pro konfiguraci přístupu k datům, tak aby byla snadná podpora libovolného dodavatele databáze, tak je třeba psát SQL dotazy, tak aby neobsahovaly syntax specifický pro nějakého dodavatele databáze.
 
+---
+
 ## Rationale
 Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozhodnutí/4_rozhodnuti_o_architekture_backendu.md "Třetí architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
+
+---
 
 ## Related Views
 - [Deployment view](../umístění/deployment.md "Deployment view")
