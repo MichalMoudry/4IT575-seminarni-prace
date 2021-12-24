@@ -14,7 +14,7 @@
 ### Kód diagramu
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
-Odkaz na textový soubor s kódem: [odkaz](./assets/diagram_codes/modules_diagram.txt).
+Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagram.txt).
 
 ---
 
