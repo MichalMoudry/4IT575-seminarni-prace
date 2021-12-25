@@ -16,69 +16,12 @@
 
 ![Package](../assets/diagram_legend_assets/package.png "Znak balíčku")
 
-
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
->@startuml
->left to right direction
->
-> component "Klientská aplikace" as client <<Subsystem>>
->
-> package Backend {
->
->   component "Webový server" as webServer <<Subsystem>> {
->
->   component ":Mediator" as MediatorService
->
->   component ":Slevová služba" as SaleCampainService
->
->   component ":Služba pro tržby" as SalesService
->
->   component ":Exportovací služba" as ExportService
->
->   component ":Služba pro integraci\nse sociálními sítěmi" as SocialMediaService
->
->   component ":Služba pro zásoby" as StocksService
->
->   MediatorService -- SaleCampainService
->
->   MediatorService -- SalesService
->
->   MediatorService -- ExportService
->
->   MediatorService -- SocialMediaService
->
->   MediatorService -- StocksService
->
->   }
->
->   package Databáze {
->
->   component "Databázový systém" as DbS <<Subsystem>> {
->
->    component ":DBMS"
->
->    component "Databáze" as db
->
->    }
->
->   }
->
->   ODBC -up- DbS
->
->   MediatorService -up- ODBC
->
-> }
->
-> Websocket -left- MediatorService
->
-> client -up- Websocket
->
-> MediatorService -- ExternalSocialMediaAPI
->
-> MediatorService -- WarehouseMgmtSystemAPI
->@enduml
+Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/component_diagram.txt).
+
+---
 
 ## Element catalog
 - **Klientská aplikace**
@@ -104,17 +47,25 @@ Kód diagramu je pro tvorbu diagramu přes PlantUML.
     - ODBC:
         - Známé rozhraní pro komunikaci se SŘBD za cílem abstrakce od konkrétních databázových systémů.
 
+---
+
 ## Context diagram
 N/A
+
+---
 
 ## Variability guide
 **Konfigurovatelnost přístupu k datům**
 
 Pro konfiguraci přístupu k datům, tak aby byla snadná podpora libovolného dodavatele databáze, tak je třeba psát SQL dotazy, tak aby neobsahovaly syntax specifický pro nějakého dodavatele databáze.
 
+---
+
 ## Rationale
-Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozhodnutí/3_rozhodnuti_o_architekture_backendu.md "Třetí architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
+Rozdělení komponent, tak aby odpovídali EDA souvisí s [čtvrtým ADR](../rozhodnutí/4_rozhodnuti_o_architekture_backendu.md "Čtvrté architektonické rozhodnutí"), kde bylo rozhodnuto pro využití EDA a také konkrétně Websocket, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a webové služby jsou pro splnění daného požadavku vhodné.
+
+---
 
 ## Related Views
-- [Deployment view](../umístění/deployment.md "Deployment view")
-- [High Level Module View](../moduly/module_view.md "High Level Module View")
+- [Deployment view](../umístění "Deployment view")
+- [High Level Module View](../moduly "High Level Module View")
