@@ -44,11 +44,17 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagr
 - **Migrations**
     - Jde o složku se soubory databázových migrací a databázového snapshotu, které jsou využívané EF Core.
 - **Pages**
+    - Jedná se o složku se stránkami serverové aplikace (např. 404 stránka).
 - **ClientTests**
+    - Složka s testy klientské aplikace prodejního systému.
 - **ServerTests**
+    - Složka s testy serverové aplikace prodejního systému.
 - **DatabaseTables**
+    - Jde o složku obsahujcí datové soubory databázových tabulek.
 - **Indexes**
+    - Jde o složku se soubory obsahující index pro data v databázových tabulkách.
 - **Catalog**
+    - Jedná se o on-line katalog (metadata databázových tabulek) databázového systému.
 
 ---
 
