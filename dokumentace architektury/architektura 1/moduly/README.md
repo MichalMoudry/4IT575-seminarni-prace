@@ -25,6 +25,10 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagr
     - Jde o aplikaci prodejního systému, která běží na klientském zařízení.
 - **Sdílená knihovna**
     - Jde o knihovnu, která je sdílená webovou aplikací a klientskou aplikací za účelem sdílení doménového modelu mezi nimi.
+- **Testy**
+    - Jedná se o softwarový projekt, který referencuje klientskou a serverovou aplikaci, přičemž sám obsahuje testy daných projektů.
+- **Databáze**
+    - Jde o databázový systém (SŘBD + databáze), která je využívaná serverovou aplikací.
 - **Views**
     - Jedná se o složku s tzv. Views, což jsou soubory definující uživatelské rozhraní (strukura, styly, animace, vazby na ViewModels a jiné).
 - **ViewModels**
@@ -39,6 +43,18 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagr
     - Jde o složku na serverové aplikaci se soubory obsahující operace s databázovými tabulkami, které jsou definované v databázovém kontextu, který je ve stejné složce.
 - **Migrations**
     - Jde o složku se soubory databázových migrací a databázového snapshotu, které jsou využívané EF Core.
+- **Pages**
+    - Jedná se o složku se stránkami serverové aplikace (např. 404 stránka).
+- **ClientTests**
+    - Složka s testy klientské aplikace prodejního systému.
+- **ServerTests**
+    - Složka s testy serverové aplikace prodejního systému.
+- **DatabaseTables**
+    - Jde o složku obsahujcí datové soubory databázových tabulek.
+- **Indexes**
+    - Jde o složku se soubory obsahující index pro data v databázových tabulkách.
+- **Catalog**
+    - Jedná se o on-line katalog (metadata databázových tabulek) databázového systému.
 
 ---
 

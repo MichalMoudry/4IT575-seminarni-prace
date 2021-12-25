@@ -37,6 +37,6 @@ Správa dokumentace by měla být v souladu s contributing guidelines tohoto rep
 
 ## Zvolené architektury
 - Service Oriented Architecture - SOA
-    - [ADR o využítí SOA](./dokumentace%20architektury/architektura%201/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí SOA")
+    - [ADR o využítí SOA](./dokumentace%20architektury/architektura%201/rozhodnutí/2-celkova-architektura "ADR o využítí SOA")
 - Event Driven Architecture - EDA
     - [ADR o využítí EDA](./dokumentace%20architektury/architektura%202/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí EDA")
