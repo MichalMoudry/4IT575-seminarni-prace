@@ -14,12 +14,12 @@
 
 - **Balíček** - Jde o seskupení jiných prvků diagramu do jednoho logického celku.
 
-![Package](../assets/diagram_legend_assets/package.png "Znak balíčku") 
+![Package](../assets/diagram_legend_assets/package.png "Znak balíčku")
 
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
-Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/component_diagram.txt).
+Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/component_diagram.puml).
 
 ---
 
@@ -62,7 +62,7 @@ Pro konfiguraci přístupu k datům, tak aby byla snadná podpora libovolného d
 ---
 
 ## Rationale
-Rozdělení komponent, tak aby odpovídali SOA souvisí s [třetím ADR](../rozhodnutí/4_rozhodnuti_o_architekture_backendu.md "Třetí architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
+Rozdělení komponent, tak aby odpovídali SOA souvisí s [čtvrtým ADR](../rozhodnutí/4-architektura-backendu "Čtvrté architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
 
 ---
 

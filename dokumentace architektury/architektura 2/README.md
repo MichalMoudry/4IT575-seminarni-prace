@@ -41,7 +41,7 @@ Funkcionalita prodejního systému je popsána níže pomocí případů níže:
 #### **Kód diagramu**
 Kód diagramu je pro tvorbu diagramu přes PlantUML.
 
-Odkaz na textový soubor s kódem: [odkaz](./assets/diagram_codes/deployment_diagram.txt).
+Odkaz na textový soubor s kódem: [odkaz](./assets/diagram_codes/deployment_diagram.puml).
 
 ---
 
