@@ -1,4 +1,5 @@
 # Rozhodnutí o nasazení prodejního systému
+
 ## ID
 6
 

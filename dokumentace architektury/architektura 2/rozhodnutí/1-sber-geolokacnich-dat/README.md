@@ -1,4 +1,5 @@
 # Rozhodnutí o sbírání geolokačních dat
+
 ## ID
 1
 
