@@ -1,0 +1,64 @@
+@startuml
+
+left to right direction
+
+component "Klientská aplikace" as client <<Subsystem>>
+
+package Backend {
+
+    component "Webový server" as webServer <<Subsystem>> {
+
+        component "Mediátor" as MediatorService
+
+    }
+
+    component "Aplikační server" as appServer <<Subsystem>> {
+
+        component ":Slevová služba" as SaleCampainService
+
+        component ":Služba pro tržby" as SalesService
+
+        component ":Exportovací služba" as ExportService
+
+        component ":Služba pro integraci se sociálními sítěmi" as SocialMediaService
+
+        component ":Služba pro zásoby" as StocksService
+    }
+
+    package Databáze {
+
+        component "Databázový systém" as DbS <<Subsystem>> {
+
+            component ":DBMS"
+
+            component "Databáze" as db
+
+        }
+
+    }
+
+    ODBC -- DbS
+
+    SaleCampainService --> ODBC
+
+    SalesService --> ODBC
+
+    StocksService -down-> ODBC
+
+    ExportService --> ODBC
+
+}
+
+client --> Websocket
+
+Websocket -- webServer
+
+webServer -- appServer
+
+SocialMediaService --> ExternalSocialMediaAPI : HTTP
+
+StocksService --> WarehouseMgmtSystemAPI : HTTP
+
+
+
+@enduml
