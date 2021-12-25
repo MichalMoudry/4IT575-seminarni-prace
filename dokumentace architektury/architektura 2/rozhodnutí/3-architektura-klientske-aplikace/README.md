@@ -1,4 +1,5 @@
 # Rozhodnutí o architektuře klientských aplikací
+
 ## ID
 3
 

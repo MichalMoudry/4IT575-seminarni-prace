@@ -1,4 +1,5 @@
 # Rozhodnutí o celkové architektuře systému
+
 ## ID
 2
 
@@ -12,7 +13,7 @@ Schválené
 Je třeba zvolit architekturu prodejního systému.
 
 ## Decision
-Pro prodejní systému budeme využívat Event driven architekturu a architektura rozhraní bude Websocket.
+Pro prodejní systému budeme využívat Event Driven Architecture a architektura rozhraní bude Websocket.
 
 ## Consequences
 Bude existovat webový server, který bude fungovat jako mediátor zajišťující výměnu zpráv mezi komponentami zajišťující funkcionalitu jednotlivých služeb, a pro klienstké aplikace tím bude poskytovat API pro přístup k daným službám. Ve výsledku klientská aplikace bude posílat requesty na daný server a server bude posílat odpovědi na zpět, přičemž pro tělo requestů a odpovědí bude požit JSON pro snazší serializaci a deserializaci obsahu.
