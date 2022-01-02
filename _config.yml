@@ -1,3 +1,21 @@
 #theme: jekyll-theme-cayman
 remote_theme: pmarsceill/just-the-docs
 markdown: GFM
+title: Dokumentace prodejního systému
+description: Stránka s dokumentací prodejního systému, která byla vypracována v rámci semestrální práce předmětu 4IT575 - Softwarové architektury.
+
+
+#Theme config
+back_to_top: true
+back_to_top_text: "Zpět nahoru"
+
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+gh_edit_link: true
+gh_edit_link_text: "Upravit stránku na GitHubu"
+gh_edit_repository: "https://github.com/MichalMoudry/4IT575-seminarni-prace"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
+
+#color_scheme: "dark"
