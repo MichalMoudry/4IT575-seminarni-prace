@@ -19,3 +19,5 @@ gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
 #color_scheme: "dark"
+
+search.previews: 0

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rozhodnutí o sbírání geolokačních dat
+parent: Architektonická rozhodnutí pro architekturu č. 2
+grand_parent: Architektura č. 2
+nav_order: 1
+---
+
 # Rozhodnutí o sbírání geolokačních dat
 
 ## ID

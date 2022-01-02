@@ -1,3 +1,10 @@
+---
+layout: default
+title: Architektura č. 2
+has_children: true
+has_toc: false
+---
+
 # Dokumentace architektury č. 2
 ## Struktura dokumentace
 - [Přehled systému](#system-overview "Přehled systému")

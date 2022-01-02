@@ -2,6 +2,7 @@
 layout: default
 title: Architektura č. 1
 has_children: true
+has_toc: false
 ---
 
 # Dokumentace architektury č. 1

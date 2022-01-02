@@ -1,3 +1,10 @@
+---
+layout: default
+title: High level přehled modulů
+parent: Architektura č. 2
+nav_order: 3
+---
+
 # High Level Module View
 ## Primary presentation
 ![High level module view](../assets/prodejni_system_high_level_module_view.png "Diagram vrstev aplikací prodejního systému")

@@ -1,4 +1,11 @@
-# Hodnocení architektury č. 1
+---
+layout: default
+title: Hodnocení architektury č. 2
+parent: Architektura č. 2
+nav_order: 5
+---
+
+# Hodnocení architektury č. 2
 ## Struktura hodnocení
 - [Metodika](#metodika "Metodika hodnocení")
 - [Hodnocení](#hodnoceni "Hodnocení architektury")

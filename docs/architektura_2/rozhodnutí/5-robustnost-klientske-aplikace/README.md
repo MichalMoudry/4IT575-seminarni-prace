@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rozhodnutí o robustnosti klientské aplikace
+parent: Architektonická rozhodnutí pro architekturu č. 2
+grand_parent: Architektura č. 2
+nav_order: 5
+---
+
 # Rozhodnutí o robustnosti klientské aplikace
 
 ## ID

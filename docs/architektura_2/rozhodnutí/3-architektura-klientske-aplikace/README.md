@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rozhodnutí o architektuře klientských aplikací
+parent: Architektonická rozhodnutí pro architekturu č. 2
+grand_parent: Architektura č. 2
+nav_order: 3
+---
+
 # Rozhodnutí o architektuře klientských aplikací
 
 ## ID

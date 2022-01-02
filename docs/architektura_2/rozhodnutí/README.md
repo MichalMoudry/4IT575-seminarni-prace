@@ -1,3 +1,11 @@
+---
+layout: default
+title:  Architektonická rozhodnutí pro architekturu č. 2
+parent: Architektura č. 2
+has_children: true
+nav_order: 1
+---
+
 # Architektonická rozhodnutí pro architekturu č. 2
 V této složce jsou uloženy architektonická rozhodnutí spojené s architekturou č. 2 (EDA).
 

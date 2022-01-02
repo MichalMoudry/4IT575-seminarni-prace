@@ -1,3 +1,10 @@
+---
+layout: default
+title: Deployment view
+parent: Architektura č. 2
+nav_order: 4
+---
+
 # Deployment view
 ## Primary presentation
 ### UML

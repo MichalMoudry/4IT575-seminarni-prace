@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rozhodnutí o architektuře backendu
+parent: Architektonická rozhodnutí pro architekturu č. 2
+grand_parent: Architektura č. 2
+nav_order: 4
+---
+
 # Rozhodnutí o architektuře backendu
 
 ## ID
