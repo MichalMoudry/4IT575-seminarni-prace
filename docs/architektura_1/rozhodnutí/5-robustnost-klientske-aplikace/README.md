@@ -2,6 +2,7 @@
 layout: default
 title: Rozhodnutí o robustnosti klientské aplikace
 parent: Architektonická rozhodnutí pro architekturu č. 1
+grand_parent: Architektura č. 1
 nav_order: 5
 ---
 

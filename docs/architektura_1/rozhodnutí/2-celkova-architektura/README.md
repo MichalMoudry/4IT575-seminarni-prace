@@ -2,6 +2,7 @@
 layout: default
 title: Rozhodnutí o celkové architektuře systému
 parent: Architektonická rozhodnutí pro architekturu č. 1
+grand_parent: Architektura č. 1
 nav_order: 2
 ---
 
