@@ -80,4 +80,4 @@ Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, proto
 ---
 
 ## Related Views
-- [Diagram komponent](../moduly "Diagram komponent")
+- [Diagram komponent](../komponenty "Diagram komponent")
