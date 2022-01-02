@@ -3,8 +3,8 @@ Repositář s dokumenty, které se týkají seminární práce v rámci předmě
 
 ## Obsah repositáře
 - [Popis aplikace](#popis-aplikace "Popis aplikace")
-- [Dokumentace architektury č. 1](./dokumentace%20architektury/architektura%201 "Dokumentace architektury č. 1")
-- [Dokumentace architektury č. 2](./dokumentace%20architektury/architektura%202 "Dokumentace architektury č. 2")
+- [Dokumentace architektury č. 1](./docs/architektura_1 "Dokumentace architektury č. 1")
+- [Dokumentace architektury č. 2](./docs/architektura_2 "Dokumentace architektury č. 2")
 
 ## Popis aplikace
 Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele stánků s párky v rohlíku prodejní systém.
@@ -37,6 +37,6 @@ Správa dokumentace by měla být v souladu s contributing guidelines tohoto rep
 
 ## Zvolené architektury
 - Service Oriented Architecture - SOA
-    - [ADR o využítí SOA](./dokumentace%20architektury/architektura%201/rozhodnutí/2-celkova-architektura "ADR o využítí SOA")
+    - [ADR o využítí SOA](./docs/architektura_1/rozhodnutí/2-celkova-architektura "ADR o využítí SOA")
 - Event Driven Architecture - EDA
-    - [ADR o využítí EDA](./dokumentace%20architektury/architektura%202/rozhodnutí/2_rozhodnuti_o_celkove_architekture_systemu.md "ADR o využítí EDA")
+    - [ADR o využítí EDA](./docs/architektura_2/rozhodnutí/2-celkova-architektura "ADR o využítí EDA")
