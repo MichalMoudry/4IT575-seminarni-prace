@@ -2,6 +2,7 @@
 layout: default
 title: Hodnocení architektury č. 1
 parent: Dokumentace architektury č. 1
+nav_order: 1
 ---
 
 # Hodnocení architektury č. 1
