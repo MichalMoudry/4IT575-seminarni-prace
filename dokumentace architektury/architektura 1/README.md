@@ -1,3 +1,9 @@
+---
+layout: default
+title: Dokumentace architektury č. 1
+has_children: true
+---
+
 # Dokumentace architektury č. 1
 ## Struktura dokumentace
 - [Přehled systému](#system-overview "Přehled systému")
