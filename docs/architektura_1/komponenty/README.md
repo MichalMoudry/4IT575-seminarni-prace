@@ -1,3 +1,10 @@
+---
+layout: default
+title: Diagram komponent
+parent: Architektura č. 1
+nav_order: 2
+---
+
 # Component view
 ## Primary presentation
 ### UML

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dokumentace architektury č. 1
+title: Architektura č. 1
 has_children: true
 ---
 
