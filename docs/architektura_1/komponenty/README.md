@@ -3,7 +3,6 @@ layout: default
 title: Diagram komponent
 parent: Architektura č. 1
 nav_order: 2
-permalink: /docs/architektura_1/komponenty
 ---
 
 # Component view
