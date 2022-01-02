@@ -1,3 +1,10 @@
+---
+layout: default
+title: Rozhodnutí o nasazení prodejního systému
+parent: Architektonická rozhodnutí pro architekturu č. 1
+nav_order: 6
+---
+
 # Rozhodnutí o nasazení prodejního systému
 
 ## ID

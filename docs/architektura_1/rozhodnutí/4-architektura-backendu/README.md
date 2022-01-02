@@ -1,3 +1,10 @@
+---
+layout: default
+title: Rozhodnutí o architektuře backendu
+parent: Architektonická rozhodnutí pro architekturu č. 1
+nav_order: 4
+---
+
 # Rozhodnutí o architektuře backendu
 
 ## ID

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Rozhodnutí o celkové architektuře systému
+parent: Architektonická rozhodnutí pro architekturu č. 1
+nav_order: 2
+---
+
 # Rozhodnutí o celkové architektuře systému
 
 ## ID
