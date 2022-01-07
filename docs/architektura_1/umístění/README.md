@@ -6,6 +6,8 @@ nav_order: 4
 ---
 
 # Deployment view
+V tomto pohledu je zobrazena infrastruktura prodejního systému.
+
 ## Primary presentation
 ### UML
 ![Deployment diagram](../assets/prodejni_system_deployment_diagram.png "Deployment diagram prodejního systému")
@@ -80,4 +82,4 @@ Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, proto
 ---
 
 ## Related Views
-- [Diagram komponent](../komponenty "Diagram komponent")
+- [Diagram komponent](../komponenty/README.md "Diagram komponent")

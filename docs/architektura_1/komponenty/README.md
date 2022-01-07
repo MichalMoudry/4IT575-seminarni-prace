@@ -3,15 +3,10 @@ layout: default
 title: Diagram komponent
 parent: Architektura č. 1
 nav_order: 2
-has_toc: true
 ---
 
 # Component view
-## Obsah
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
+Jedná se o pohled na komponenty prodejního systému.
 
 ## Informace o dokumentu
 - **Autoři**:
@@ -86,5 +81,5 @@ Rozdělení komponent, tak aby odpovídali SOA souvisí s [čtvrtým ADR](../roz
 ---
 
 ## Related Views
-- [Deployment view](../umístění "Deployment view")
-- [High Level Module View](../moduly "High Level Module View")
+- [Deployment view](../umístění/README.md "Deployment view")
+- [High Level Module View](../moduly/README.md "High Level Module View")

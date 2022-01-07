@@ -6,6 +6,8 @@ nav_order: 3
 ---
 
 # High Level Module View
+V tomto pohledu jsou zobrezeny moduly komponent prodejního systému.
+
 ## Primary presentation
 ![High level module view](../assets/prodejni_system_high_level_module_view.png "Diagram vrstev aplikací prodejního systému")
 
@@ -80,4 +82,4 @@ Výhodou MVVM vzoru je vysoká znalost mezi .NET vývojáři.
 ---
 
 ## Related views
-- [Diagram komponent](../moduly/ "Diagram komponent prodejního systému")
+- [Diagram komponent](../moduly/README.md "Diagram komponent prodejního systému")
