@@ -3,7 +3,7 @@ Repositář s dokumenty, které se týkají seminární práce v rámci předmě
 
 ## Obsah repositáře
 - [Popis aplikace](#popis-aplikace "Popis aplikace")
-- [Dokumentace architektury č. 1](./docs/architektura_1 "Dokumentace architektury č. 1")
+- [Dokumentace architektury č. 1](./docs/architektura_1/index.md "Dokumentace architektury č. 1")
 - [Dokumentace architektury č. 2](./docs/architektura_2 "Dokumentace architektury č. 2")
 
 ## Popis aplikace

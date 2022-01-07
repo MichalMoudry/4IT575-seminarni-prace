@@ -6,6 +6,12 @@ nav_order: 2
 ---
 
 # Component view
+## Obsah
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## Primary presentation
 ### UML
 ![Component diagram](../assets/prodejni_system_component_diagram.png "Diagram komponent prodejního systému")
