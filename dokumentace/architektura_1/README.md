@@ -1,11 +1,11 @@
 # Dokumentace architektury č. 1
 ## Struktura dokumentace
 - [Přehled systému](#system-overview "Přehled systému")
-- [Architektonická rozhodnutí](./rozhodnutí "Architektonická rozhodnutí")
-- [Diagram komponent](./komponenty "Diagram komponent")
-- [High level přehled modulů](./moduly "High level přehled modulů")
-- [Diagram nasazení](./umístění "Diagram nasazení")
-- [Hodnocení architektury](./hodnoceni "Hodnocení architektury")
+- [Architektonická rozhodnutí](./rozhodnutí/README.md "Architektonická rozhodnutí")
+- [Diagram komponent](./komponenty/README.md "Diagram komponent")
+- [High level přehled modulů](./moduly/README.md "High level přehled modulů")
+- [Diagram nasazení](./umístění/README.md "Diagram nasazení")
+- [Hodnocení architektury](./hodnoceni/README.md "Hodnocení architektury")
 
 ## System overview
 Popisovaná architektura se vztahuje na aplikaci pro místní obchodníky se stánky pro prodej párků v rohlíku, tedy se jedná o prodejní systém pro takové uživatele.
