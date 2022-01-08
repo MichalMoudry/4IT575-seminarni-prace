@@ -3,8 +3,8 @@ Repositář s dokumenty, které se týkají seminární práce v rámci předmě
 
 ## Obsah repositáře
 - [Popis aplikace](#popis-aplikace "Popis aplikace")
-- [Dokumentace architektury č. 1](./docs/architektura_1 "Dokumentace architektury č. 1")
-- [Dokumentace architektury č. 2](./docs/architektura_2 "Dokumentace architektury č. 2")
+- [Dokumentace architektury č. 1](./dokumentace/SOA/ "Dokumentace architektury č. 1")
+- [Dokumentace architektury č. 2](./dokumentace/EDA/ "Dokumentace architektury č. 2")
 
 ## Popis aplikace
 Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele stánků s párky v rohlíku prodejní systém.
@@ -33,10 +33,10 @@ Místní obchodník se stánky s párky v rohlíku chce pro své provozovatele s
 PÍSEK, Slavoj, 2021. Zadání seminární práce z předmětu 4IT575 – Softwarové Architektury. 10. listopad 2021.
 
 ## Správa dokumentace
-Správa dokumentace by měla být v souladu s contributing guidelines tohoto repositáře (viz. [Contributing guidelines](./CONTRIBUTING.md "Contributing guidelines")).
+Správa dokumentace by měla být v souladu s contributing guidelines tohoto repositáře (viz. [Contributing guidelines](https://github.com/MichalMoudry/4IT575-seminarni-prace/blob/main/CONTRIBUTING.md "Contributing guidelines")).
 
 ## Zvolené architektury
 - Service Oriented Architecture - SOA
-    - [ADR o využítí SOA](./docs/architektura_1/rozhodnutí/2-celkova-architektura "ADR o využítí SOA")
+    - [ADR o využítí SOA](./dokumentace/SOA/rozhodnutí/2-celkova-architektura/ "ADR o využítí SOA")
 - Event Driven Architecture - EDA
-    - [ADR o využítí EDA](./docs/architektura_2/rozhodnutí/2-celkova-architektura "ADR o využítí EDA")
+    - [ADR o využítí EDA](./dokumentace/EDA/rozhodnutí/2-celkova-architektura/ "ADR o využítí EDA")
