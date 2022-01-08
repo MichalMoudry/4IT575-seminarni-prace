@@ -64,7 +64,7 @@ Pro konfiguraci přístupu k datům, tak aby byla snadná podpora libovolného d
 ---
 
 ## Rationale
-Rozdělení komponent, tak aby odpovídali SOA souvisí s [čtvrtým ADR](../rozhodnutí/4-architektura-backendu "Čtvrté architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
+Rozdělení komponent, tak aby odpovídali SOA souvisí s [čtvrtým ADR](../rozhodnutí/4-architektura-backendu/README.md "Čtvrté architektonické rozhodnutí"), kde bylo rozhodnuto pro využití SOA a také konkrétně REST, kdy v požadavcích zadavatele nebyly stanoveny požadavky na backend, jen že řešení nebude třeba za 3 roky vyměnit a RESTové služby jsou pro splnění daného požadavku vhodné díky jejich návaznosti na HTTP protokol.
 
 ---
 
