@@ -1,11 +1,6 @@
 # Component view
 Jedná se o pohled na komponenty prodejního systému.
 
-## Informace o dokumentu
-- **Autoři**:
-    - Michal Moudrý
-- **Poslední změna**: 07.01.2022
-
 ## Primary presentation
 ### UML
 ![Component diagram](../assets/prodejni_system_component_diagram.png "Diagram komponent prodejního systému")
