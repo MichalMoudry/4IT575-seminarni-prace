@@ -67,5 +67,5 @@ Rozdělení komponent, tak aby odpovídali EDA souvisí s [čtvrtým ADR](../roz
 ---
 
 ## Related Views
-- [Deployment view](../umístění/README.md "Deployment view")
-- [High Level Module View](../moduly/README.md "High Level Module View")
+- [Deployment view](../umístění "Deployment view")
+- [High Level Module View](../moduly "High Level Module View")

@@ -1,7 +1,7 @@
 # Hodnocení architektury č. 2
 ## Struktura hodnocení
 - [Metodika](#metodika "Metodika hodnocení")
-- [Hodnocení](#hodnoceni "Hodnocení architektury")
+- [Hodnocení](#hodnocení "Hodnocení architektury")
 - [Souhrn hodnocení](#souhrn "Souhrn hodnocení")
 
 ## Metodika

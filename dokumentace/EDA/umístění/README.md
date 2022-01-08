@@ -73,4 +73,4 @@ Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, proto
 ---
 
 ## Related Views
-- [Diagram komponent](../komponenty/README.md "Diagram komponent")
+- [Diagram komponent](../komponenty "Diagram komponent")
