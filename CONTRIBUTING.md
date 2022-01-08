@@ -29,6 +29,9 @@ Provádění změn lze provádět skrze webový prohlížeč, kdy lze editovat s
 4. Commit změn
 5. Vytvoření PR
 
+### GitHub Pages
+**TODO**: přidat sekci o GitHub pages
+
 ## Commit změn
 Poté co jste provedli změny v repositáři, tak je třeba provést tzv. stage změn (příkaz git add), a pak je třeba provést commit změn s následným push commitu s vhodnou zprávou.
 
