@@ -1,4 +1,4 @@
-[< Zpět](../ "Zpět na hlavní stránku")
+[< Zpět](../../ "Zpět na hlavní stránku")
 
 # Dokumentace architektury č. 1
 ## Struktura dokumentace
