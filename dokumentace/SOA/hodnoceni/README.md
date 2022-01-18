@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled systému")
+
 # Hodnocení architektury č. 1
 ## Struktura hodnocení
 - [Metodika](#metodika "Metodika hodnocení")

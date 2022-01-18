@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled systému")
+
 # Component view
 Jedná se o pohled na komponenty prodejního systému.
 
