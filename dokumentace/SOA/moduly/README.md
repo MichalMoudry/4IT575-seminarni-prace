@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled systému")
+
 # High Level Module View
 V tomto pohledu jsou zobrezeny moduly komponent prodejního systému.
 

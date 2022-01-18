@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled systému")
+
 # Deployment view
 V tomto pohledu je zobrazena infrastruktura prodejního systému.
 
