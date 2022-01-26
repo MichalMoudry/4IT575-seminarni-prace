@@ -1,6 +1,8 @@
 [< Zpět](../ "Zpět na přehled systému")
 
 # High Level Module View
+V tomto pohledu jsou zobrezeny moduly komponent prodejního systému.
+
 ## Primary presentation
 ![High level module view](../assets/prodejni_system_high_level_module_view.png "Diagram vrstev aplikací prodejního systému")
 
@@ -27,6 +29,10 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagr
     - Jde o aplikaci prodejního systému, která běží na klientském zařízení.
 - **Sdílená knihovna**
     - Jde o knihovnu, která je sdílená webovou aplikací a klientskou aplikací za účelem sdílení doménového modelu mezi nimi.
+- **Testy**
+    - Jedná se o softwarový projekt, který referencuje klientskou a serverovou aplikaci, přičemž sám obsahuje testy daných projektů.
+- **Databáze**
+    - Jde o databázový systém (SŘBD + databáze), která je využívaná serverovou aplikací.
 - **Views**
     - Jedná se o složku s tzv. Views, což jsou soubory definující uživatelské rozhraní (strukura, styly, animace, vazby na ViewModels a jiné).
 - **ViewModels**
@@ -37,10 +43,24 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagr
     - Jedná se o složku s tzv. Services, což jsou služby pro abstrakci metod ve ViewModels, tedy například místo toho, aby každý ViewModel implementoval zobrazení dialogových oken, tak to lze přesunout do Service třídy a využít ji skrze Dependency Injection.
 - **Controllers**
     - Jedná se o složku se soubory obsahující metody, které jsou namapovány na konkrétní endpointy služeb nebo mohou být namapovány automaticky.
+- **Mediator**
+    - Obsahuje logiku toho jak má mediátor vyhodnotit a kam předat, které službě, příchozí zprávy.
 - **DataAccess**
     - Jde o složku na serverové aplikaci se soubory obsahující operace s databázovými tabulkami, které jsou definované v databázovém kontextu, který je ve stejné složce.
 - **Migrations**
     - Jde o složku se soubory databázových migrací a databázového snapshotu, které jsou využívané EF Core.
+- **Pages**
+    - Jedná se o složku se stránkami serverové aplikace (např. 404 stránka).
+- **ClientTests**
+    - Složka s testy klientské aplikace prodejního systému.
+- **ServerTests**
+    - Složka s testy serverové aplikace prodejního systému.
+- **DatabaseTables**
+    - Jde o složku obsahujcí datové soubory databázových tabulek.
+- **Indexes**
+    - Jde o složku se soubory obsahující index pro data v databázových tabulkách.
+- **Catalog**
+    - Jedná se o on-line katalog (metadata databázových tabulek) databázového systému.
 
 ---
 
