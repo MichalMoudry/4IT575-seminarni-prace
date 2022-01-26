@@ -1,6 +1,8 @@
 [< Zpět](../ "Zpět na přehled systému")
 
 # Deployment view
+V tomto pohledu je zobrazena infrastruktura prodejního systému.
+
 ## Primary presentation
 ### UML
 ![Deployment diagram](../assets/prodejni_system_deployment_diagram.png "Deployment diagram prodejního systému")
@@ -40,10 +42,16 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/deployment_di
     - Multiplatformní webový server pro .NET aplikace.
 - **Aplikace webové API**
     - Jde o `ASP.NET Core` API aplikaci, která poskytuje endpointy a operace (aplikační model se konkrétně jmenuje `ASP.NET Core Web API`) pro požadované služby (ty jsou stanovené v diagramu komponent).
+- **Aplikační server**
+    - Fyzický server, na kterém v rámci Dockeru běží účetní software, CRM software a WMS software.
+- **Docker**
+    - Software pro izolování aplikací do tzv. kontejnerů. Kontejnery obsahují pouze danou aplikaci spolu s pro ni potřebnými soubory (bez OS).
 - **Databázový server**
     - Jedná se o fyzický server, na kterém běží databáze a MS SQL Server, přičemž jako komunikační protokol je využíván ODBC.
 - **MS SQL Server**
     - Jde o Database Management System od společnosti Microsoft, který umožňuje pracovat s relačními databázovými tabulkami, které jsou používané naším prodejním systémem.
+- **Účetní software**
+    - Jedná se o externí servery, které dohromady realizují účetní systém, pro správu účetnictví a komplexní sledování tržeb, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
 - **WMS server**
     - Jedná se o externí servery, které dohromady realizují Warehouse Management System, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
 - **Social media server**
@@ -64,6 +72,10 @@ Klientská aplikace prodejního systému by měla být multiplatformní, aby už
 **Nezávislost na platformě webového serveru**
 
 Pro běh aplikace pro webové API je použit Kestrel, tedy aplikace nemusí běžet jen na Windows serveru (IIS), ale je podporovanán i Linux (nginx, Apache).
+
+**Nezávislost na platformě aplikačního serveru**
+
+Pro běh aplikací je použito prostředí Docker, tedy aplikace nemusí běžet jen na Windows serveru (IIS), ale je podporován i Linux, popř. cloudové služby (AWS...).
 
 ---
 
