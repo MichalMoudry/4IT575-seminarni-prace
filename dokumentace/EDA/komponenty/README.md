@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled systému")
+
 # Component view
 ## Primary presentation
 ### UML

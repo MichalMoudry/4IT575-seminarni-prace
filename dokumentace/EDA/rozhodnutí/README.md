@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled systému")
+
 # Architektonická rozhodnutí pro architekturu č. 2
 V této složce jsou uloženy architektonická rozhodnutí spojené s architekturou č. 2 (EDA).
 

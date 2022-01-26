@@ -1,3 +1,5 @@
+[< Zpět](../ "Zpět na přehled architektonických rozhodnutí")
+
 # Rozhodnutí o robustnosti klientské aplikace
 
 ## ID
