@@ -46,10 +46,6 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/deployment_di
     - Jedná se o fyzický server, na kterém běží databáze a MS SQL Server, přičemž jako komunikační protokol je využíván ODBC.
 - **MS SQL Server**
     - Jde o Database Management System od společnosti Microsoft, který umožňuje pracovat s relačními databázovými tabulkami, které jsou používané naším prodejním systémem.
-- **WMS server**
-    - Jedná se o externí servery, které dohromady realizují Warehouse Management System, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
-- **Social media server**
-    - Jde o externí servery vlastníka sociálních sítí, respektive jde o server s API pro práci se sociální sítí vlastníka
 
 ---
 
