@@ -24,11 +24,7 @@ node "Microsoft Azure" as azure <<execution environment>> {
 
         node Docker <<execution environment>> {
 
-            artifact "Účetní software" <<application>>
-
-            artifact "CRM software" <<application>>
-
-            artifact "WMS software" <<application>>
+            artifact "ERP software" <<application>>
 
         }
 
@@ -46,17 +42,16 @@ node "Microsoft Azure" as azure <<execution environment>> {
 
 }
 
-WebServer -down- SocialNetwork : HTTP
+WebServer -up- SocialNetwork : HTTP
 
-WebServer -down- StandsOwnerDevice  : WebSocket
+WebServer -left- StandsOwnerDevice  : WebSocket
 
-WebServer -down- StandManagerDevice  : WebSocket
+WebServer -left- StandManagerDevice  : WebSocket
 
-WebServer -down- WarehouseWorkerDevice : WebSocket
+WebServer -left- WarehouseWorkerDevice : WebSocket
 
-AplicationServer -right- WebServer : WebSocket
+AplicationServer -up- WebServer : WebSocket
 
-AplicationServer -- DbServer : ODBC
-
+AplicationServer -down- DbServer : ODBC
 
 @enduml
