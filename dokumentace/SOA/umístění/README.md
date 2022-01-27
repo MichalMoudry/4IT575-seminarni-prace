@@ -1,4 +1,4 @@
-[Hlavní stránka](/ "Hlavní stránka") / [Dokumentace architektury č. 1](../ "Zpět na přehled systému") / Deployment view
+[< Zpět](../ "Zpět na přehled systému")
 
 # Deployment view
 V tomto pohledu je zobrazena infrastruktura prodejního systému.
