@@ -83,4 +83,4 @@ Výhodou MVVM vzoru je vysoká znalost mezi .NET vývojáři.
 ---
 
 ## Related views
-- [Diagram komponent](../moduly "Diagram komponent prodejního systému")
+- [Diagram komponent](../komponenty "Diagram komponent prodejního systému")

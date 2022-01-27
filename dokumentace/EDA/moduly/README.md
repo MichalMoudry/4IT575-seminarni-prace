@@ -39,6 +39,12 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/modules_diagr
     - Jde o složku s tzv. ViewModels, což jsou soubory obsahující vlastnosti a příkazy, které může View využívat. Výhodou tohoto oddělení o UI je lepší testovatelnost.
 - **Models**
     - Jde o složku s tzv. Models, což jsou třídy zapouzdřující data aplikace, tedy lze je považovat za doménový model aplikace, což obvykle zahrnuje business a validační logiku.
+- **Animations**
+    - Složka se soubory, které obsahují implementaci vlastních animací, jež budou využívané v UI klientské aplikace.
+- **Controls**
+    - Složka obsahující soubory s prvky (komponentami) UI, které lze využívat na několika různých stránkách.
+- **Constants**
+    - Složka se soubory obsahující konstanty, které jsou využívané v klientské aplikaci (např. konstanty pro uživatelské nastavení).
 - **Services**
     - Jedná se o složku s tzv. Services, což jsou služby pro abstrakci metod ve ViewModels, tedy například místo toho, aby každý ViewModel implementoval zobrazení dialogových oken, tak to lze přesunout do Service třídy a využít ji skrze Dependency Injection.
 - **Controllers**

@@ -46,12 +46,8 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/deployment_di
     - Fyzický server, na kterém v rámci Dockeru běží účetní software, CRM software a WMS software.
 - **Docker**
     - Software pro izolování aplikací do tzv. kontejnerů. Kontejnery obsahují pouze danou aplikaci spolu s pro ni potřebnými soubory (bez OS).
-- **Účetní software**
-    - Jedná se o externí servery, které dohromady realizují účetní systém, pro správu účetnictví a komplexní sledování tržeb, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
-- **WMS server**
-    - Jedná se o externí servery, které dohromady realizují Warehouse Management System, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
-- **Social media server**
-    - Jde o externí servery vlastníka sociálních sítí, respektive jde o server s API pro práci se sociální sítí vlastníka
+- **ERP software**
+    - Jedná se o servery, které dohromady realizují podnikový systém.
 - **Databázový server**
     - Jedná se o fyzický server, na kterém běží databáze a MS SQL Server, přičemž jako komunikační protokol je využíván ODBC.
 - **MS SQL Server**
