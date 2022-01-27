@@ -9,10 +9,17 @@
 - [Diagram nasazení](./umístění "Diagram nasazení")
 - [Hodnocení architektury](./hodnoceni "Hodnocení architektury")
 
+### Souvislosti mezi kapitolami
+- **Přehled systému** popisuje o čem ten prodejní systém obecně je, tedy jaká je požadovaná funkcionalita, a jaké jsou požadované atributy kvality.
+- Kapitola **Architektonická rozhodnutí** obsahuje všechny architektonické rozhodnutí spojené s prodejním systémem, přičemž se jedná o podklad pro následující pohledy na systém.
+- **Diagram komponent** znázorňuje komponenty prodejního systému, včetně jejich vazeb, přičemž tento pohled slouží pro celkový přehled systému a jeho částí na konceptuální úrovni (nejde o přehled softwarového řešení).
+- **High level přehled modulů** vychází z diagramu komponent, kdy tento pohled znázorňuje strukturu softwarového řešení prodejního systému (např. znázornění vrstev klientské aplikace).
+- **Diagram nasazení** vychází také z diagramu komponent, kdy tento pohled je využit pro specifikaci fyzické architektury prodejního systému (znázornění softwarových a hardwarových komponent systému).
+
 ## System overview
 Popisovaná architektura se vztahuje na aplikaci pro místní obchodníky se stánky pro prodej párků v rohlíku, tedy se jedná o prodejní systém pro takové uživatele.
 
-Zvolená architektura č. 2 je EDA.
+Zvolená architektura č. 2 je **EDA**.
 
 ---
 

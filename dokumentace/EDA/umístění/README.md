@@ -29,11 +29,11 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/deployment_di
 
 ## Element catalog
 - **Zařízení obchodníka se stánky**
-    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít specifický operační systém (Windows, Android, iOS).
+    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení má operační systém Android.
 - **Zařízení provozovatele stánku**
-    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít specifický operační systém (Windows, Android, iOS).
+    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení má operační systém Android.
 - **Zařízení pracovníka správy zásob**
-    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení může mít specifický operační systém (Windows, Android, iOS).
+    - Fyzické zařízení v roli tenkého klienta, přičemž toto zařízení má operační systém Android.
 - **Microsoft Azure**
     - Jde o cloudové prostředí Azure od firmy Microsoft.
 - **Web server**
@@ -46,16 +46,16 @@ Odkaz na textový soubor s kódem: [odkaz](../assets/diagram_codes/deployment_di
     - Fyzický server, na kterém v rámci Dockeru běží účetní software, CRM software a WMS software.
 - **Docker**
     - Software pro izolování aplikací do tzv. kontejnerů. Kontejnery obsahují pouze danou aplikaci spolu s pro ni potřebnými soubory (bez OS).
-- **Databázový server**
-    - Jedná se o fyzický server, na kterém běží databáze a MS SQL Server, přičemž jako komunikační protokol je využíván ODBC.
-- **MS SQL Server**
-    - Jde o Database Management System od společnosti Microsoft, který umožňuje pracovat s relačními databázovými tabulkami, které jsou používané naším prodejním systémem.
 - **Účetní software**
     - Jedná se o externí servery, které dohromady realizují účetní systém, pro správu účetnictví a komplexní sledování tržeb, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
 - **WMS server**
     - Jedná se o externí servery, které dohromady realizují Warehouse Management System, respektive jde o server poskytující jednotné rozhraní k daným serverům nebo serveru.
 - **Social media server**
     - Jde o externí servery vlastníka sociálních sítí, respektive jde o server s API pro práci se sociální sítí vlastníka
+- **Databázový server**
+    - Jedná se o fyzický server, na kterém běží databáze a MS SQL Server, přičemž jako komunikační protokol je využíván ODBC.
+- **MS SQL Server**
+    - Jde o Database Management System od společnosti Microsoft, který umožňuje pracovat s relačními databázovými tabulkami, které jsou používané naším prodejním systémem.
 
 ---
 
@@ -80,7 +80,7 @@ Pro běh aplikací je použito prostředí Docker, tedy aplikace nemusí běžet
 ---
 
 ## Rationale
-Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci ESB a HTTP protokolu. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
+Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci webové serveru a Websocketů. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
 
 Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, protože serverová a klientská aplikace je napsaná na platformě .NET, dále vývojářský tým má nejvíce zkušeností s danou cloud platformou.
 
