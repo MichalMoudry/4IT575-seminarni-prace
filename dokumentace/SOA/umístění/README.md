@@ -1,4 +1,4 @@
-[< Zpět](../ "Zpět na přehled systému")
+[Hlavní stránka](/ "Hlavní stránka") / [Dokumentace architektury č. 1](../ "Zpět na přehled systému") / Deployment view
 
 # Deployment view
 V tomto pohledu je zobrazena infrastruktura prodejního systému.
@@ -70,7 +70,7 @@ Pro běh aplikace pro webové API je použit Kestrel, tedy aplikace nemusí bě�
 ---
 
 ## Rationale
-Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci ESB a HTTP protokolu. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
+Výhodou využití REST služeb je abstrakce od konkrétní implementace služeb, tedy klientská aplikace je nezávislá na daných službách a komunikuje s nimi za pomoci webového serveru a HTTP protokolu. Další výhodou je využívání serveru Kestrel, který umožňuje nasadit webovou API na nginx nebo Apache, tedy není zde potřeba využívat IIS.
 
 Pro snazší provoz prodejního systému je zvolené prostředí MS Azure, protože serverová a klientská aplikace je napsaná na platformě .NET, dále vývojářský tým má nejvíce zkušeností s danou cloud platformou.
 
